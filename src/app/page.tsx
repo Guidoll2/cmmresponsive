@@ -16,7 +16,7 @@ export default function Home() {
     
     
        <Image
-        className="w-dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
+        className=""
         src="/logosinfondo.png"
         alt="CMM Logo"
         width={110}
@@ -28,7 +28,7 @@ export default function Home() {
 
  
   
-    <div className='text-left ml-40 mt-4 z-20'>
+    <div className='text-left ml-40 mt-3 z-20'>
       <MenuDesplegable></MenuDesplegable>
     </div>
   
@@ -36,27 +36,31 @@ export default function Home() {
   
 {/**FIN DEL DIV DEL NAVBAR */}
 
-<div id='HERODEBAJOHEADER' className="grid grid-rows-[1fr, auto] text-center mt-3 bg-stone-200">
-<h1 className='text-blue-950 text-2xl max-h-[200px] font-semibold text-left font-[raleway]'>Seguridad Electrónica en residencias, comercios e industrias.</h1>
+<div id='HERODEBAJOHEADER' className="grid grid-rows-[1fr, auto] text-center mt-3 bg-teal-600 shadow-xl">
+<h1 className='text-stone-100 text-2xl max-h-[200px] font-semibold text-left font-[raleway]'>Seguridad Electrónica en residencias, comercios e industrias.</h1>
   
 </div>
-<div className='bg-gradient-to-r via-blue-950 from-stone-100 w-full h-2'></div>
-    <div id='CONTENEDORALARMA' className='grid grid-rows-2 bg-blue-950 p-4'>
+
+    <div id='CONTENEDORALARMA' className='grid grid-rows-2 bg-blue-950 p-4 mt-4'>
    
 <h1 className='font-[raleway] font-bold text-4xl text-stone-100 z-20'>Alarmas Monitoreadas Inalambricas</h1>
 <h2 className='font-[raleway] font-bold text-xl text-stone-100 py-4'>Protección antishock en puertas y ventanas.</h2>
+<div id='SLIDER' className='py-10 '> <ImageSlider></ImageSlider></div>
+ 
 <p className='font-[raleway] text-stone-200 text-xl'> Instalar un equipo de alarmas es el primer paso para salvaguardar lo que más te
           importa. CMM te ofrece una avanzada alarma con detección anticipada para localizar intentos de robo antes del ingreso. Nuestra pronta reacción disuade a los ladrones y activa el protocolo de seguridad instantáneamente.</p>
  <div className='bg-gradient-to-r via-stone-100 from-stone-100 w-full h-1 mt-10'></div>
- <div id='SLIDER' className='py-10 '> <ImageSlider></ImageSlider></div>
+
  
              
 </div>
 
     
-<div id='CONTENEDORCCTV' className='grid grid-rows-2 bg-gradient-to-b via-blue-950 from-blue-950 mt-2 p-4'>
+<div id='CONTENEDORCCTV' className='grid grid-rows-2 bg-blue-950 mt-2 p-4'>
 <h1 className='font-[raleway] font-bold text-4xl text-stone-200 mt-6'>CCTV - Cámaras de seguridad</h1>
 <h2 className='font-[raleway] font-bold text-xl text-stone-200 mt-4'>Mira tu propiedad desde cualquier lugar, en cualquier momento, directamente en tu celular.</h2>
+<div id='SLIDER' className='py-10'> <ImageSlidercctv></ImageSlidercctv></div>
+ 
 <p className='font-[raleway] text-stone-200 text-xl mt-8'> Un sistema de cámaras es un complemento perfecto para nuestro servicio de alarma
           monitoreada. Juntos, forman un escudo de protección integral, brindándote una mayor
           seguridad y confianza en la protección de tus seres queridos y tus bienes más preciados. Accede a grabaciones para revisar eventos pasados. No importa si estás de
@@ -64,7 +68,6 @@ export default function Home() {
           lo que sucede en tu propiedad.</p>
          
           <div className='bg-gradient-to-r via-stone-100 from-stone-100 w-full h-1 mt-10'></div>
- <div id='SLIDER' className='py-10'> <ImageSlidercctv></ImageSlidercctv></div>
  
              
 </div>
