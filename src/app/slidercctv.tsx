@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 
 const ImageSlidercctv: React.FC = () => {
   const imageUrls: string[] = [
-    '/hikcam1.png',
-    '/cctv.jpg',
+     '/cctv.jpg',
     '/cctv2.jpg',
     
     // Añade más URLs de imágenes aquí

@@ -30,8 +30,9 @@ const MenuDesplegable = () => {
           <ul className="p-4 mt-20">
             <a href='#CONTENEDORALARMA'><li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 rounded font-bold font-[raleway]">Alarmas monitoreadas</li></a>
            <a href='#CONTENEDORCCTV'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 rounded font-bold font-[raleway]">Cámaras de seguridad</li></a>
-            <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 font-[raleway] font-bold">Contacto</li>
-            <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 font-[raleway] font-bold">Tienda Virtual</li>
+           <a href='#CONTENEDORCONTACTO'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 font-[raleway] font-bold">Contacto</li></a>
+            <a href='#CONTENEDORTIENDA'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 font-[raleway] font-bold">Tienda Virtual</li></a>
+            <a href='#CONTENEDORIDENTIDAD'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 font-[raleway] font-bold">Nosotros</li></a>
             {/* Agrega más opciones según tus necesidades */}
           </ul>
         </div>
