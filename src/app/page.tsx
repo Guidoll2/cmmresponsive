@@ -72,7 +72,7 @@ export default function Home() {
 <div id='CONTENEDORTIENDA' className='grid grid-rows-2 bg-blue-950 mt-2 p-4'>
 <h1 className='font-[raleway] font-bold text-4xl text-stone-200 mt-5'>TIENDA VIRTUAL</h1>
 <h2 className='font-[raleway] font-bold text-xl text-stone-200 mb-4'>Conoce nuestros productos y servicios.</h2>
-<p className='font-[raleway] text-stone-200 text-xl'> "Todo proyecto de seguridad electrónica requiere un asesoramiento previo. Nuestros representantes están disponibles para guiarte. En nuestra tienda virtual, podrás encontrar los precios de nuestros servicios y el costo mínimo de los distintos sistemas de alarma y cámaras de seguridad."</p>
+<p className='font-[raleway] text-stone-200 text-xl'> Todo proyecto de seguridad electrónica requiere un asesoramiento previo. Nuestros representantes están disponibles para guiarte. En nuestra tienda virtual, podrás encontrar los precios de nuestros servicios y el costo mínimo de los distintos sistemas de alarma y cámaras de seguridad.</p>
 <a href="https://guidoll.mercadoshops.com.ar/" target="_blank">    <p className='text-stone-200 text-l py-4 text-center'>Hace Click Aca para ir a la tienda</p></a>
 </div>
 
