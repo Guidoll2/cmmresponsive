@@ -6,7 +6,7 @@ const MenuDesplegable = () => {
   return (
     <div className="relative">
       <button
-        className="p-2 text-blue-950 z-20"
+        className="py-2 px-1 text-blue-950 z-20"
         onClick={() => setMenuVisible(!menuVisible)}
       >
         <svg

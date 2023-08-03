@@ -13,22 +13,22 @@ export default function Home() {
       
      <div id='NAVBAR' className=" grid grid-cols-2 w-screen opacity border-stone-500 bg-white font-mono text-sm">
      <div className="flex">
-    <Logo></Logo>
     
-    {/**   <Image
+    
+       <Image
         className="w-dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-        src="/logonegro.svg"
+        src="/logosinfondo.png"
         alt="CMM Logo"
-        width={130}
+        width={110}
         height={150}
         priority
-      />*/}
+      />
       <h1 className='text-4xl font-[raleway] text-blue-950 mt-5'>CMM</h1>
     </div> 
 
  
   
-    <div className='fixed right-0 top-4 z-20 opacity-90 '>
+    <div className='fixed right-0 top-4 z-20 opacity-90 bg-white rounded-[100px] w-[40px] h-[40px] '>
       <MenuDesplegable></MenuDesplegable>
     </div>
   
@@ -46,21 +46,11 @@ export default function Home() {
 </div>
     
     <div id='CONTENEDORALARMA' className='grid grid-rows-2 bg-gradient-to-b via-blue-950 from-blue-950'>
-    <Image
-        className="w-dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert absolute right-0 z-10"
-        src="/alarmanegro.svg"
-        alt="CMM Logo"
-        width={130}
-        height={150}
-        priority
-      />
+
 <h1 className='font-[raleway] font-bold text-4xl text-stone-100 z-20'>Alarmas Monitoreadas Inalambricas</h1>
-<h2 className='font-[raleway] font-bold text-xl text-stone-100 py-4'>Sensores con deteccion anticipada</h2>
+<h2 className='font-[raleway] font-bold text-xl text-stone-100 py-4'>Protección antishock en puertas y ventanas.</h2>
 <p className='font-[raleway] text-stone-200 text-xl'> Instalar un equipo de alarmas es el primer paso para salvaguardar lo que más te
-          importa. Con la nueva tecnologia de sensores Nuestro equipo altamente capacitado estará atento a cualquier evento y
-          actuará de inmediato en caso de emergencia. Además, monitoreamos constantemente la
-          corriente eléctrica y la comunicación para detectar cualquier fallo y garantizar la
-          protección continua de tu hogar, negocio o industria.</p>
+          importa. CMM te ofrece una avanzada alarma con detección anticipada para localizar intentos de robo antes del ingreso. Nuestra pronta reacción disuade a los ladrones y activa el protocolo de seguridad instantáneamente.</p>
  
  <div id='SLIDER' className='py-2 border-t-[8px] border-stone-700 rounded-l '> <ImageSlider></ImageSlider></div>
  
