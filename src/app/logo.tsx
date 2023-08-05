@@ -18,8 +18,11 @@ const Logo = () => {
         {/* Define el gradiente lineal */}
         <linearGradient id="logoGradient" gradientTransform="rotate(90)">
           <stop offset="0%" stopColor="#E5E5E5" />
-          <stop offset="80%" stopColor="#1E40AF" />
+
+          <stop offset="40%" stopColor="#1E40AF" />
         </linearGradient>
+
+	
 
         {/* Define los trazados de los elementos path */}
         <path fill="#525252" opacity="1.000000" stroke="none" 

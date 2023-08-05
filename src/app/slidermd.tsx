@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
 
-const ImageSlidercctv: React.FC = () => {
+const ImageSlidermd: React.FC = () => {
   const imageUrls: string[] = [
-     '/cctv.jpg',
-    '/cctv2.jpg',
-    '/cctv3.jpg',
-    // Añade más URLs de imágenes aquí
+   
+    'telefono.svg',
+    '/logosvg.svg',
+        // Añade más URLs de imágenes aquí
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -21,19 +21,20 @@ const ImageSlidercctv: React.FC = () => {
   }, [imageUrls.length]);
 
   return (
-    <div className="relative h-64">
+    <div className="flex h-80 grid grid-cols-2">
       {imageUrls.map((url, index) => (
         <img
           key={url}
           src={url}
           alt={`Image ${index + 1}`}
-          className={`absolute top-0 left-0 w-full h-full ${
+          className={`flex h-20  ${
             index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-          } transition-opacity duration-1000`}
+          } transition-opacity duration-1000 ml-60`}
         />
       ))}
     </div>
+    
   );
 };
 
-export default ImageSlidercctv;
+export default ImageSlidermd;

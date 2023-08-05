@@ -9,11 +9,11 @@ const MenuDesplegable = () => {
         className="py-2 px-1 text-blue-950 z-20"
         onClick={() => setMenuVisible(!menuVisible)}
       >
-        <svg
+        <svg className='w-6 md:w-12'
           fill="none"
-          height="24"
+           
           viewBox="0 0 24 24"
-          width="34"
+         
           xmlns="http://www.w3.org/2000/svg"
         >
           <g fill="currentColor">
@@ -24,17 +24,19 @@ const MenuDesplegable = () => {
 
       {menuVisible && (
         <div
-          className="absolute top-[0px] right-[10px]  h-screen w-60 bg-blue-950  rounded-[10px] shadow-lg z-1 transition duration-150 ease-out hover:ease-in "
+          className="absolute top-[0px] w-[300px] border-[2px] border-stone-700 h-[500px] right-[10px] bg-gradient-to-l from-blue-950 to-blue-900 rounded-[10px] shadow-2xl z-1 transition duration-150 ease-out hover:ease-in md:w-[400px] md:h-[600px]"
           onClick={() => setMenuVisible(false)}
         >
+              
           <ul className="p-4 mt-20">
-            <a href='#CONTENEDORALARMA'><li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 rounded font-bold font-[raleway]">Alarmas monitoreadas</li></a>
-           <a href='#CONTENEDORCCTV'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 rounded font-bold font-[raleway]">Cámaras de seguridad</li></a>
-           <a href='#CONTENEDORCONTACTO'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 font-[raleway] font-bold">Contacto</li></a>
-            <a href='#CONTENEDORTIENDA'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 font-[raleway] font-bold">Tienda Virtual</li></a>
-            <a href='#CONTENEDORIDENTIDAD'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-gray-200 font-[raleway] font-bold">Nosotros</li></a>
+            <a href='#detallealarma' ><li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded font-light font-[raleway] ">Alarmas monitoreadas</li></a>
+           <a href='#CONTENEDORCCTV' > <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded font-light font-[raleway]">Cámaras de seguridad</li></a>
+           <a href='#CONTENEDORCONTACTO'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white font-[raleway] font-light rounded">Contacto</li></a>
+            <a href='#CONTENEDORTIENDA'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white font-[raleway] font-light rounded">Tienda Virtual</li></a>
+            <a href='#CONTENEDORIDENTIDAD'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white font-[raleway] font-light rounded">Nosotros</li></a>
             {/* Agrega más opciones según tus necesidades */}
           </ul>
+
         </div>
       )}
     </div>

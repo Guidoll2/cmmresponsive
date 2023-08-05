@@ -2,11 +2,10 @@ import { useState, useEffect } from 'react';
 
 const ImageSlider: React.FC = () => {
   const imageUrls: string[] = [
-    '/sensorantishock.jpg',
+   
     '/sensorpuerta.jpg',
-    '/sensormano.jpg',
-    '/vetti5.png',
-    // Añade más URLs de imágenes aquí
+    
+        // Añade más URLs de imágenes aquí
   ];
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
