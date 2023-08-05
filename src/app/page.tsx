@@ -126,7 +126,7 @@ export default function Home() {
 <div id='CONTENEDORACCESO' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 to-blue-900 mt-2 p-4'>
 <h1 className='font-[] font-bold text-4xl text-stone-200 mt-5'>INDUSTRIAS Y COMERCIOS</h1>
 <h2 className='font-[] font-bold text-xl text-stone-200 mt-4'>Controla y optimiza tus negocios</h2>
-<p className='font-[] text-stone-200 text-xl'>"CMM se enorgullece en ofrecer una completa variedad de servicios especializados para comercios e industrias.
+<p className='font-[] text-stone-200 text-xl'>CMM se enorgullece en ofrecer una completa variedad de servicios especializados para comercios e industrias.
  Visualización de zonas de trabajo, control de acceso y/o procesos productivos. Alertas por corte de corriente electrica y mucho más. <span className='text-center'>Contactanos y retoma el control de tu negocio.</span>
   </p>
 <a href="https://guidoll.mercadoshops.com.ar/" target="_blank">    <p className='text-blue-950 text-xl text-center bg-gradient-to-r via-stone-100 from-stone-100 rounded-xl mt-8'>Conoce más</p></a>
