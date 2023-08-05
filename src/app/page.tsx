@@ -52,9 +52,9 @@ export default function Home() {
   
 {/**FIN DEL DIV DEL NAVBAR */}
 
-<div id='HERODEBAJOHEADER' className="text-center h-[60px] bg-gradient-to-t from-blue-950 to-blue-900 shadow-2xl md:h-[300px] md:mt-10 md:absolute md:mt-44">
+<div id='HERODEBAJOHEADER' className="text-center h-[80px] bg-gradient-to-t from-blue-950 to-blue-900 shadow-2xl md:h-[300px] md:mt-10 md:absolute md:mt-44">
 <SectionTitle2></SectionTitle2>
-<h1 className='text-stone-100 text-[15px] text-center font-bold text-left font-light md:text-6xl md:text-center ml-2 md:mt-8'>Cuidamos lo que importa desde 2012.</h1>
+<h1 className='text-stone-100 text-xl text-center font-bold text-left font-light md:text-6xl md:text-center ml-2 mt-3 md:mt-8'>12 años cuidando tu propiedad</h1>
   
 </div>
 {/**
@@ -237,18 +237,34 @@ export default function Home() {
 <h1 className='font-[] font-bold text-4xl text-stone-100 z-20'>Quienes somos? </h1>
 
 <h2 className='font-[] font-bold text-xl text-stone-100 py-4 '>Mas de 12 años cuidandote</h2>
-<p className='font-[] text-stone-200 text-xl font-light'>  CMM es una empresa líder en el campo de la seguridad electrónica, con una trayectoria de 15 años brindando servicios de calidad en las localidades de San Miguel del Monte y Cañuelas. Nuestro amplio abanico de servicios incluye el monitoreo de alarmas, la instalación de sistemas de cámaras de seguridad y el control de acceso. Nos enorgullece ofrecer soluciones integrales y personalizadas para satisfacer las necesidades específicas de cada cliente.
+<p className='font-[] text-stone-200 text-xl font-light'> 
+CMM, una empresa líder en seguridad electrónica con 12 años de experiencia, ha estado brindando servicios de calidad en las localidades de San Miguel del Monte y Cañuelas. Nuestro amplio abanico de soluciones incluye el monitoreo de alarmas, la instalación de sistemas de cámaras de seguridad y el control de acceso.
 
-Además, destacamos nuestro compromiso con el servicio técnico local, brindando un soporte rápido y eficiente para asegurar el funcionamiento óptimo de todos los sistemas instalados. Contamos con un equipo altamente capacitado de profesionales técnicos que están disponibles para atender cualquier requerimiento o consulta.
+Lo que comenzó como un servicio para casas de fin de semana en nuestro querido pueblo, San Miguel del Monte, ha crecido con el desarrollo del lugar. Ahora, nuestra oferta se extiende a casas de residentes, comercios e industrias. Nos enorgullecemos de mantener nuestra esencia cercana y cálida, siempre arraigados a nuestras raíces locales.
 
-En CMM, entendemos que la seguridad es primordial y nos esforzamos por proporcionar soluciones confiables y de vanguardia para proteger a nuestros clientes y sus activos. Confíe en nosotros para su proyecto de seguridad electrónica y experimente la tranquilidad de contar con una empresa sólida y comprometida con su protección</p>
- <div className='bg-gradient-to-r via-stone-100 from-stone-100 w-full h-1 mt-10'></div>
+Nuestro equipo altamente capacitado de profesionales técnicos está siempre a su disposición para brindar un soporte rápido y eficiente, asegurando el óptimo funcionamiento de todos los sistemas instalados. En CMM, entendemos la importancia de la seguridad, por lo que nos esforzamos por proporcionar soluciones confiables y de vanguardia que protejan a nuestros clientes y sus activos.
+
+Con equipos de última tecnología y la calidez de ser parte del pueblo, trabajamos para ofrecer soluciones integrales y personalizadas que satisfagan las necesidades específicas de cada cliente. Confíe en nosotros para su proyecto de seguridad electrónica y descubra por qué nuestra reputación y trayectoria nos han convertido en un referente en el campo de la seguridad en la región. y experimente la tranquilidad de contar con una empresa sólida y comprometida con su protección</p>
+ 
              
 </div>
 
 
-<footer className='grid grid-rows-2 bg-gradient-to-t from-blue-950 to-blue-900 text-stone-200 mt-2'>
-  <h1 className='text-center py-2 text-xl'>   CMM - San Miguel del Monte - Cañuelas - Lobos</h1>
+<footer className='h-[200px] bg-gradient-to-l from-stone-100 via-stone-400 to-stone-400 text-blue-950 mt-2'>
+<div className='w-[100px] absolute right-0'>
+  <Image
+      className="md:absolute mt-4 md:w-[300px]"
+      src="/logosinfondo.png"
+      alt="CMM Logo"
+      width={1000}
+      height={0}
+      priority
+    />
+    </div>
+<div className=' left-0 absolute mt-5'>
+<SectionTitle></SectionTitle>
+</div>
+  <h1 className='text-center  mt-[90px] text-xl'> San Miguel del Monte - Cañuelas - Lobos</h1>
   <h2 className='text-center py-3 text-[13px]'> Copyright 2022. Todos los derechos reservados. <span className='text-left'>Diseño y Desarrollo Guido Llaurado.</span> </h2>
 
 </footer>
