@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="block grid bg-gradient-to-r from-stone-100 to-stone-400 md:grid md:grid-cols-1">
     <a className='' href='https://wa.me/+5491133324034' target='_blank'> <Image
-      className="ml-5 opacity-80 z-10 fixed right-2 bottom-5 md:absolute md:w-[300px]"
+      className="ml-5 opacity-80 z-10 fixed right-2 bottom-5 md:fixed md:w-[80px] md:bottom-10"
       src="/whatsappv.svg"
       alt="CMM Logo"
       width={40}
@@ -37,7 +37,7 @@ export default function Home() {
   </div> */}
   <div className='w-[200px]'>
   <Image
-      className="ml-5  md:absolute md:w-[300px]"
+      className="ml-5  md:absolute md:w-[350px] z-10"
       src="/logosinfondo.png"
       alt="CMM Logo"
       width={1000}
@@ -45,16 +45,16 @@ export default function Home() {
       priority
     />
     </div>
-  <div className='flex items-center z-20 justify-end mt-20 md:absolute md:right-4 md:top-[50px] md:z-20 '>
+  <div className='flex items-center z-20 justify-end mt-20 md:absolute md:right-4 md: md:z-20 '>
     <MenuDesplegable></MenuDesplegable>
   </div>
 </div>
   
 {/**FIN DEL DIV DEL NAVBAR */}
 
-<div id='HERODEBAJOHEADER' className="text-center h-[80px] bg-gradient-to-t from-blue-950 to-blue-900 shadow-2xl md:h-[300px] md:mt-10 md:absolute md:mt-44">
+<div id='HERODEBAJOHEADER' className="text-center h-[80px] w-screen bg-gradient-to-t from-blue-950 to-blue-900 shadow-2xl md:h-[300px] md:mt-10 md:absolute md:mt-44">
 <SectionTitle2></SectionTitle2>
-<h1 className='text-stone-100 text-xl text-center font-bold text-left font-light md:text-6xl md:text-center ml-2 mt-3 md:mt-8'>12 años cuidando tu propiedad</h1>
+<h1 className='text-stone-100 text-l text-center text-left  md:text-6xl md:text-center ml-2 md:mt-8'>La tranquilidad de tener el control...</h1>
   
 </div>
 {/**
@@ -73,17 +73,18 @@ export default function Home() {
 
 <div id='CONTENEDORALARMA' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 p-4 mt-4 shadow-2xl md:grid-cols-3 md:hidden '>
    
-<h1 className='font-[] font-bold text-4xl text-center text-stone-100'>Alarmas Monitoreadas Inalambricas</h1>
-<h2 className='font-[] font-bold text-xl text-stone-100 py-4 text-center '>Protección antigolpes en puertas y ventanas.</h2>
-<div id='SLIDER' className='py-8 md:py-0 '> <ImageSlider></ImageSlider></div>
+<h1 className='font-[] font-bold text-4xl text-center text-stone-100 py-4 '>Alarmas inalámbricas monitoreadas</h1>
+<h2 className='font- text-xl text-stone-100 text-center '>Hogar seguro, diseño sin cables</h2>
+<div id='SLIDER' className=' md:py-0 '> <ImageSlider></ImageSlider></div>
  
-<p className='font-[] text-stone-200 text-xl md:'> Instalar un equipo de alarmas es el primer paso para salvaguardar lo que más te
+<p className='  text-stone-200  text-xl md:'> Instalar un equipo de alarmas es el primer paso para salvaguardar lo que más te
           importa. CMM te ofrece una avanzada alarma con detección anticipada para localizar intentos de robo antes del ingreso. Nuestra pronta reacción disuade a los ladrones y activa el protocolo de seguridad instantáneamente.</p>
 
 
+ 
           <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
-          <button className='bg-gradient-to-r via-stone-100 from-stone-100 rounded-xl mt-5 font-[] text-xl w-full'>Conoce mas</button></a>
-             
+          <button className='bg-gradient-to-r from-stone-100 to-stone-400 rounded-xl mt-5 text-2xl  w-full  h-[60px]'>Conoce más</button></a>
+         
 </div>
 
 
@@ -100,7 +101,7 @@ export default function Home() {
 
 
           <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
-          <button className='bg-gradient-to-r via-stone-100 from-stone-100 rounded-xl mt-5 font-[] text-xl w-full'>Conoce mas</button></a>
+          <button className='bg-gradient-to-r via-stone-100 from-stone-100 rounded-xl mt-5 font-[] text-2xl w-full'>Conoce mas</button></a>
              
 </div>
 
@@ -119,7 +120,8 @@ export default function Home() {
           lo que sucede en tu propiedad.</p>
          
 
-          <a href="https://guidoll.mercadoshops.com.ar/MLA-1451242088-alarma-vetti-_JM" target="_blank"> <button className='bg-gradient-to-r via-stone-100 from-stone-100 rounded-xl mt-5 font-[raleway] text-xl w-full'>Conoce mas</button></a>
+          <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
+          <button className='bg-gradient-to-r from-stone-100 to-stone-400 rounded-xl mt-5 text-2xl  w-full  h-[60px]'>Conoce más</button></a>
              
 </div>
 
@@ -129,7 +131,8 @@ export default function Home() {
 <p className='font-[] text-stone-200 text-xl'>CMM se enorgullece en ofrecer una completa variedad de servicios especializados para comercios e industrias.
  Visualización de zonas de trabajo, control de acceso y/o procesos productivos. Alertas por corte de corriente electrica y mucho más. <span className='text-center'>Contactanos y retoma el control de tu negocio.</span>
   </p>
-<a href="https://guidoll.mercadoshops.com.ar/" target="_blank">    <p className='text-blue-950 text-xl text-center bg-gradient-to-r via-stone-100 from-stone-100 rounded-xl mt-8'>Conoce más</p></a>
+  <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
+          <button className='bg-gradient-to-r from-stone-100 to-stone-400 rounded-xl mt-5 text-2xl  w-full  h-[60px]'>Conoce más</button></a>
 </div>
 
 {/** 
@@ -234,7 +237,7 @@ export default function Home() {
 
 <div id='CONTENEDORIDENTIDAD' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900  mt-2 p-4'>
 
-<h1 className='font-[] font-bold text-4xl text-stone-100 z-20'>Quienes somos? </h1>
+<h1 className='font-[] font-bold text-4xl text-stone-100 z-20'>¿Quienes somos? </h1>
 
 <h2 className='font-[] font-bold text-xl text-stone-100 py-4 '>Mas de 12 años cuidandote</h2>
 <p className='font-[] text-stone-200 text-xl font-light'> 
@@ -261,11 +264,11 @@ Con equipos de última tecnología y la calidez de ser parte del pueblo, trabaja
       priority
     />
     </div>
-<div className=' left-0 absolute mt-5'>
+<div className=' left-0 absolute'>
 <SectionTitle></SectionTitle>
 </div>
   <h1 className='text-center  mt-[90px] text-xl'> San Miguel del Monte - Cañuelas - Lobos</h1>
-  <h2 className='text-center py-3 text-[13px]'> Copyright 2022. Todos los derechos reservados. <span className='text-left'>Diseño y Desarrollo Guido Llaurado.</span> </h2>
+  <h2 className='text-center py-3 text-[15px]'> Copyright 2022. Todos los derechos reservados. <span className='text-left'>Diseño y Desarrollo Guido Llaurado.</span> </h2>
 
 </footer>
 

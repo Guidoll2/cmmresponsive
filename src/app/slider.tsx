@@ -4,7 +4,7 @@ const ImageSlider: React.FC = () => {
   const imageUrls: string[] = [
    
     '/sensorpuerta.jpg',
-    
+    'sensorantishock.jpg'
         // Añade más URLs de imágenes aquí
   ];
 
@@ -27,7 +27,7 @@ const ImageSlider: React.FC = () => {
           key={url}
           src={url}
           alt={`Image ${index + 1}`}
-          className={`absolute top-0 left-0 w-full h-full ${
+          className={`absolute bottom-[20px] left-0 w-full h-60 ${
             index === currentImageIndex ? 'opacity-100' : 'opacity-0'
           } transition-opacity duration-1000`}
         />
