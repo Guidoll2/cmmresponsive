@@ -24,15 +24,15 @@ const MenuDesplegable = () => {
 
       {menuVisible && (
         <div
-          className="absolute top-[0px] w-[280px] border-[2px] border-stone-700 h-[300px] right-[10px] bg-gradient-to-l from-blue-950 to-blue-900 rounded-[10px] shadow-2xl z-1 transition duration-150 ease-out hover:ease-in md:w-[400px] md:h-[600px]"
+          className="absolute top-[0px] w-[280px] border-[2px] border-stone-700 h-[350px] right-[10px] bg-gradient-to-l from-blue-950 to-blue-900 rounded-[10px] shadow-2xl z-1 transition duration-150 ease-out hover:ease-in md:w-[400px] md:h-[600px]"
           onClick={() => setMenuVisible(false)}
         >
-              
-          <ul className="p-4 mt-4">
+              <p className='absolute right-5 top-3 text-xl text-white'>X</p>
+          <ul className="p-4 mt-10">
             <a href='#CONTENEDORALARMA' ><li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Alarmas monitoreadas</li></a>
            <a href='#CONTENEDORCCTV' > <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Cámaras de seguridad</li></a>
            <a href='#CONTENEDORCONTACTO'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Contacto</li></a>
-            <a href='#CONTENEDORTIENDA'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Tienda Virtual</li></a>
+           <a href="https://guidoll.mercadoshops.com.ar/" target="_blank">  <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Tienda Virtual</li></a>
             <a href='#CONTENEDORIDENTIDAD'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white  rounded text-center">Nosotros</li></a>
             {/* Agrega más opciones según tus necesidades */}
           </ul>

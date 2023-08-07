@@ -3,8 +3,10 @@ import { useState, useEffect } from 'react';
 const ImageSlidermd: React.FC = () => {
   const imageUrls: string[] = [
    
-    'telefono.svg',
-    '/logosvg.svg',
+    'alarmacasag.svg',
+    'callcenter.svg',
+    'policia.svg',
+   
         // Añade más URLs de imágenes aquí
   ];
 
@@ -21,15 +23,15 @@ const ImageSlidermd: React.FC = () => {
   }, [imageUrls.length]);
 
   return (
-    <div className="flex h-80 grid grid-cols-2">
+    <div className="flex h-100 grid grid-cols-3 mt-10">
       {imageUrls.map((url, index) => (
         <img
           key={url}
           src={url}
           alt={`Image ${index + 1}`}
-          className={`flex h-20  ${
+          className={`flex h-40 w-full  ${
             index === currentImageIndex ? 'opacity-100' : 'opacity-0'
-          } transition-opacity duration-1000 ml-60`}
+          } transition-opacity duration-1000`}
         />
       ))}
     </div>

@@ -4,7 +4,10 @@ const ImageSlider: React.FC = () => {
   const imageUrls: string[] = [
    
     '/sensorpuerta.jpg',
-    'sensorantishock.jpg'
+    '/sensorantishock.jpg',
+
+
+    
         // Añade más URLs de imágenes aquí
   ];
 
