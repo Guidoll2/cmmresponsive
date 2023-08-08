@@ -29,7 +29,7 @@ const MenuDesplegable = () => {
         >
               <p className='absolute right-5 top-3 text-xl text-white'>X</p>
           <ul className="p-4 mt-10">
-            <a href='#CONTENEDORALARMA' ><li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Alarmas monitoreadas</li></a>
+            <a href='#DETAILALARM' ><li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Alarmas monitoreadas</li></a>
            <a href='#CONTENEDORCCTV' > <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Cámaras de seguridad</li></a>
            <a href='#CONTENEDORCONTACTO'> <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Contacto</li></a>
            <a href="https://guidoll.mercadoshops.com.ar/" target="_blank">  <li className="px-4 py-2 mb-3 hover:bg-gray-100 cursor-pointer bg-white rounded text-center">Tienda Virtual</li></a>
