@@ -26,7 +26,7 @@ const MenuDesplegable = () => {
         </svg>
       
       </button>
-      <p className='text-[12px] mt-1'>Menú</p>
+      <p className='text-[12px] mt-1 md:text-xl md:mt-2'>Menú</p>
       </div>
 
       {menuVisible && (

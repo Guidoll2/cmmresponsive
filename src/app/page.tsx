@@ -29,21 +29,30 @@ export default function Home() {
       priority
     /></a>
 
+<a className='' href='#NAVBAR'> <Image
+      className="ml-5 opacity-80 z-10 fixed left-0 bottom-5 md:fixed md:w-[80px] md:bottom-10"
+      src="/flecha.svg"
+      alt="CMM Logo"
+      width={60}
+      height={0}
+      priority
+    /></a>
 
-<div id='NAVBAR' className="fixed  h-[75px] place-items-center grid grid-cols-1 w-screen opacity border-b-[2px] border-blue-700 shadow-2xl bg-gradient-to-r from-stone-100 to-stone-400 md:h-40 md:border-none">
+
+<div id='NAVBAR' className="fixed md:absolute h-[75px] place-items-center grid grid-cols-1 w-screen opacity border-b-[2px] border-blue-700 shadow-2xl bg-gradient-to-r from-stone-100 to-stone-400 md:h-40 md:border-none">
   
 
-  <div className='grid grid-cols-3 '>
+  <div className='grid grid-cols-3 md:w-screen md:place-items-center '>
   <SectionTitle></SectionTitle>
   <Image
-      className="w-28 md:absolute md:w-[350px]  "
+      className="w-28 md:w-[200px] "
       src="/logosinfondo.png"
       alt="CMM Logo"
       width={1000}
       height={0}
       priority
     />
- <h2 className='text-[20px] text-blue-950'>Seguridad Electrónica</h2>
+ <h2 className='text-[20px] text-blue-950 md:text-4xl'>Seguridad Electrónica</h2>
   
 
 
@@ -51,7 +60,7 @@ export default function Home() {
 </div>
 </div>
 
-<div className='fixed w-screen mt-[75px] bg-gradient-to-r from-stone-100 to-stone-300'>
+<div className='fixed w-screen mt-[75px] bg-gradient-to-r from-stone-100 to-stone-300 md:mt-[150px] md:absolute '>
   <MenuDesplegable></MenuDesplegable>
   </div>
   
