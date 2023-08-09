@@ -13,6 +13,7 @@ import SectionTitle2 from '../app/gradientebajo'
 import ComoFunciona from './gradientecomofunciona';
 import SectionHeader from './gradienteletrasfooter';
 
+<link rel="icon" href="/logosinfondo.png" sizes="any" />
 
 export default function Home() {
    return (
@@ -178,7 +179,7 @@ export default function Home() {
       priority
     />   
 
-<h1 className='text-2xl text-left text-stone-100 mt-5 md:text-3xl md:mt-20 font-bold'>Llamada al 911</h1>
+<h1 className='text-2xl text-stone-100 mt-5 md:text-3xl md:mt-20 font-bold'>Llamada al 911</h1>
 <p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
 
 </div>
