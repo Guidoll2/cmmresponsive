@@ -30,7 +30,7 @@ export default function Home() {
     /></a>
 
 <a className='' href='#NAVBAR'> <Image
-      className="ml-5 opacity-80 z-10 invisible left-0 bottom-5 md:fixed md:visible md:w-[80px] md:bottom-10"
+      className="ml-5 opacity-80  invisible left-0 bottom-5 md:fixed md:visible md:w-[80px] md:bottom-10"
       src="/flecha.svg"
       alt="CMM Logo"
       width={60}
@@ -39,10 +39,10 @@ export default function Home() {
     /></a>
 
 
-<div id='NAVBAR' className="fixed md:absolute h-[75px] place-items-center grid grid-cols-1 w-screen opacity border-b-[2px] border-blue-700 shadow-2xl bg-gradient-to-r from-stone-100 to-stone-400 md:h-40 md:border-none">
+<div id='NAVBAR' className="fixed z-[100] md:absolute h-[75px] place-items-center grid grid-cols-1 w-screen border-b-[2px] border-blue-700 shadow-2xl bg-gradient-to-r from-stone-100 to-stone-400 md:h-40 md:border-none">
   
 
-  <div className='grid grid-cols-3 md:w-screen md:place-items-center '>
+  <div className='grid grid-cols-3 ml-5 md:w-screen md:place-items-center '>
   <SectionTitle></SectionTitle>
   <Image
       className="w-28 md:w-[200px] "
@@ -60,17 +60,17 @@ export default function Home() {
 </div>
 </div>
 
-<div className='fixed w-screen mt-[75px] bg-gradient-to-r from-stone-100 to-stone-300 md:mt-[150px] md:absolute '>
+<div className='fixed z-[100] w-screen mt-[75px] bg-gradient-to-r from-stone-100 to-stone-300 md:mt-[150px] md:absolute '>
   <MenuDesplegable></MenuDesplegable>
   </div>
   
 {/**FIN DEL DIV DEL NAVBAR */}
 
 
-<div id='CONTENEDORALARMA' className='grid grid-rows-1 bg-gradient-to-l from-blue-950 to-blue-900 p-4 mt-28 shadow-2xl md:mt-60'>
+<div id='CONTENEDORALARMA' className='grid grid-rows-1 bg-gradient-to-l from-blue-950 to-blue-900 p-4 mt-20 shadow-2xl md:mt-60'>
    
-<h1 className='font-[raleway] font-bold text-5xl text-center text-stone-100 py-2 md:text-7xl '>Alarmas monitoreadas</h1>
-<h2 className='py-4 font-[raleway] text-2xl text-stone-100 text-center md:text-4xl'>Hogar seguro, diseño sin cables</h2>
+<h1 className='font-[raleway] font-bold  text-center text-stone-100 py-2 md:text-7xl text-5xl '>Alarmas monitoreadas</h1>
+<h2 className='py-4 font-[raleway]  text-stone-100 text-center md:text-4xl text-2xl'>Hogar seguro, diseño sin cables</h2>
 
 <div className='flex grid grid-cols-2 gap-2 mt-4 md:w-full md:grid-cols-4 md:gap-4 md:ml-10 opacity-80'>
 <Image
@@ -132,8 +132,8 @@ export default function Home() {
 
 
 <div className='mt-5 '>
-<h1 className='text-2xl text-center text-stone-100 md:text-2xl font-bold'>Monitoreo las 24 horas</h1>
-<p className='mt-3 text-xl text-center text-stone-100'>La alarma emite una señal que instantáneamente llega a nuestros servidores.</p>
+<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold'>Monitoreo las 24 horas</h1>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>La alarma emite una señal que instantáneamente llega a nuestros servidores.</p>
 </div>
 
  
@@ -150,8 +150,8 @@ export default function Home() {
 </div>
 
 <div className='grid grid-rows-1 grid-cols-1 md:mt-20'>
-<h1 className='text-2xl text-center mt-5 text-stone-100 md:text-2xl font-bold'>Notificaciones al instante </h1>
-<p className='text-stone-200 text-xl mt-3 text-center'>En el instante que la alarma suena una notificación se genera en tu celular. </p>
+<h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-bold'>Notificaciones al instante </h1>
+<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center'>En el instante que la alarma suena una notificación se genera en tu celular. </p>
 </div>
 
 
@@ -165,8 +165,8 @@ export default function Home() {
     />   
 
 <div className='grid grid-rows-1 grid-cols-1 mt- md:mt-20'>
-<h1 className='text-2xl text-center mt-5 text-stone-100 md:text-2xl font-bold'>Asistencia telefónica </h1>
-<p className='text-stone-200 text-xl text-center mt-3'>Nuestros operadores inician el protocolo de llamadas.</p>
+<h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-bold'>Asistencia telefónica </h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Nuestros operadores inician el protocolo de llamadas.</p>
 </div>
 
 <Image
@@ -178,8 +178,8 @@ export default function Home() {
       priority
     />   
 
-<h1 className='text-2xl text-left text-stone-100 mt-5 md:text-2xl md:mt-20 font-bold'>Llamada al 911</h1>
-<p className='text-stone-200 text-xl text-center mt-3'>Se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
+<h1 className='text-2xl text-left text-stone-100 mt-5 md:text-3xl md:mt-20 font-bold'>Llamada al 911</h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
 
 </div>
 
@@ -191,11 +191,11 @@ export default function Home() {
 
 </div>
 
-<div id='CONTENEDORCCTV' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 mt-2 p-4 '>
+<div id='CONTENEDORCCTV' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 mt-2 p-4'>
 
-<h1 className='font-[raleway] font-bold text-center text-4xl text-stone-200 mt-6'>Cámaras de seguridad </h1>
+<h1 className='font-[raleway] font-bold text-center md:text-7xl text-5xl text-stone-200 mt-6'>Cámaras de seguridad </h1>
 
-<h2 className='font-[] text-center text-2xl text-stone-200 mt-4'>Tu propiedad en tu celular </h2>
+<h2 className='font-[] text-center md:text-4xl text-2xl text-stone-200 mt-4'>Tu propiedad en tu celular </h2>
 
 
 <div className='flex grid grid-cols-2 gap-4 md:grid-cols-4 opacity-80'>
@@ -259,8 +259,8 @@ export default function Home() {
 
 
 <div className='mt-5'>
-<h1 className='text-2xl text-center text-stone-100 md:text-2xl font-bold'>Notificaciones en tiempo real</h1>
-<p className='mt-3 text-l text-center text-stone-100'>Recibi y gestiona notifiaciones de tu sistema de video vigilancia de manera instantanea.</p>
+<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold'>Notificaciones en tiempo real</h1>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>Recibi y gestiona notifiaciones de tu sistema de video vigilancia de manera instantanea.</p>
 </div>
 
  
@@ -277,8 +277,8 @@ export default function Home() {
 </div>
 
 <div className='grid grid-rows-1 grid-cols-1 md:mt-20'>
-<h1 className='text-xl text-center mt-5 text-stone-100 md:text-2xl font-bold '>Visualizacion en directo las 24 horas </h1>
-<p className='text-stone-200 text-l mt-3 text-center'>Estes donde estes vas a poder ver tu propiedad, dandote el control de cada situacion.</p>
+<h1 className='text-xl text-center mt-5 text-stone-100 md:text-3xl font-bold '>Visualizacion en directo las 24 horas </h1>
+<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center'>Estes donde estes vas a poder ver tu propiedad, dandote el control de cada situacion.</p>
 </div>
 
 
@@ -292,8 +292,8 @@ export default function Home() {
     />   
 
 <div className='grid grid-rows-1 grid-cols-1 mt- md:mt-20'>
-<h1 className='text-xl text-center mt-5 text-stone-100 md:text-2xl font-bold'>Grabación continua </h1>
-<p className='text-stone-200 text-l text-center mt-3'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
+<h1 className='text-xl text-center mt-5 text-stone-100 md:text-3xl font-bold'>Grabación continua </h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
 </div>
 </div>
  
@@ -309,8 +309,8 @@ export default function Home() {
 
 
 <div id='CONTENEDORINDUSTRIAS' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 to-blue-900 mt-2 p-4'>
-<h1 className='font-[raleway] font-bold text-4xl text-stone-200 mt-5 text-center'>Industrias y comercios</h1>
-<h2 className='font-[] text-2xl text-stone-200 mt-4 text-center'>Controla y optimiza tus negocios</h2>
+<h1 className='font-[raleway] font-bold md:text-7xl text-5xl text-stone-200 mt-5 text-center'>Industrias y comercios</h1>
+<h2 className='font-[] md:text-4xl text-2xl text-stone-200 mt-4 text-center'>Controla y optimiza tus negocios</h2>
 
 
 <div className='p-4 grid grid-cols-1 gap-4 mt-8 place-items-center md:place-items-center  '>
@@ -327,8 +327,8 @@ export default function Home() {
 
 
 <div className=''>
-<h1 className='text-2xl text-center text-stone-100 md:text-2xl font-bold'>Control de acceso</h1>
-<p className='mt-3 text-l text-center text-stone-100'>Gestiona de manera electrónica el acceso a los distintos sectores de tu industria/comercio</p>
+<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold'>Control de acceso</h1>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>Gestiona de manera electrónica el acceso a los distintos sectores de tu industria/comercio</p>
 </div>
 
 <div className='grid grid-cols-1 mt-5'>
@@ -344,8 +344,8 @@ export default function Home() {
 </div>
 
 <div className='grid grid-cols-1 md:mt-20'>
-<h1 className='text-xl text-center text-stone-100 md:text-2xl font-bold'>Mejora de procesos productivos </h1>
-<p className='text-stone-200 text-l text-center mt-3'>Recibi alertas del estado de tus equipos de producción instantáneamente</p>
+<h1 className='text-xl text-center text-stone-100 md:text-3xl font-bold'>Mejora de procesos productivos </h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Recibi alertas del estado de tus equipos de producción instantáneamente</p>
 </div>
 
 
@@ -360,8 +360,8 @@ export default function Home() {
     />   
 </div>
 <div className='grid grid-rows-1 grid-cols-1 md:mt-20'>
-<h1 className='text-2xl text-center text-stone-100 md:text-2xl font-bold'>Seguimiento de empleados</h1>
-<p className='text-stone-200 text-l text-center mt-3'>Generá tareas para tus empleados que queden registradas en tu app de control</p>
+<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold'>Seguimiento de empleados</h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Generá tareas para tus empleados que queden registradas en tu app de control</p>
 </div>
 </div>
  
@@ -376,8 +376,8 @@ export default function Home() {
 <div id='CONTENEDORCONTACTO' className='grid grid-rows-2 bg-gradient-to-t from-blue-950 to-blue-900 mt-2 p-4 md:'>
 
   
-<h1 className='font-[raleway] font-bold text-4xl text-stone-200 mt-5 text-center'>Contáctenos</h1>
-<h2 className='font-[] font-light text-2xl text-stone-200 mt-3 text-center'>Un asesor esta listo para atenderlo</h2>
+<h1 className='font-[raleway] font-bold md:text-7xl text-5xl text-stone-200 mt-5 text-center'>Contáctenos</h1>
+<h2 className='font-[] font-light md:text-4xl text-2xl text-stone-200 mt-3 text-center'>Un asesor esta listo para atenderlo</h2>
 
 <div className='grid grid-rows-3 grid-cols-1 p-4 md:grid-rows-5 gap-5'>
 <div className="flex p-2 items-center">
@@ -496,16 +496,18 @@ export default function Home() {
 
 <div id='CONTENEDORIDENTIDAD' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900  mt-2 p-4'>
 
-<h1 className='font-[raleway] font-bold text-4xl text-stone-100 z-20'>¿Quienes somos? </h1>
+<h1 className='font-[raleway] font-bold text-4xl text-stone-100'>¿Quienes somos? </h1>
 
 <h2 className='font-[raleway] font-bold text-xl text-stone-100 py-4 '>Mas de 12 años cuidandote</h2>
 <p className='font-[] text-stone-200 text-xl font-light'> 
 
-CMM se destaca como una empresa líder en el campo de la seguridad electrónica, con más de una década de experiencia en el sector. Nuestro enfoque se ha centrado en brindar servicios de alta calidad en las localidades de San Miguel del Monte y Cañuelas, atendiendo a una diversa gama de clientes.
-Lo que comenzó como un modesto servicio de seguridad para casas de fin de semana en San Miguel del Monte ha evolucionado y se ha adaptado al crecimiento y desarrollo de la región. Hoy, nuestra presencia se extiende atendiendo a una diversa gama de clientes que incluye casas de fin de semana, residencias permanentes, comercios e industrias.
-Al confiar en CMM para sus proyectos de seguridad electrónica, puede estar seguro de que recibirá el apoyo de una empresa sólida y comprometida con su protección. Nuestra reputación y trayectoria en el campo de la seguridad en la región nos avalan como un referente confiable y efectivo.
 
-En resumen, CMM es mucho más que una empresa de seguridad electrónica. Somos un socio estratégico en la protección de su entorno y bienestar. Confíe en nosotros y experimente la tranquilidad de contar con un equipo profesional, tecnológicamente avanzado y dedicado a salvaguardar lo que más le importa.
+CMM se destaca como una empresa líder en el campo de la seguridad electrónica, con más de una década de experiencia
+
+Lo que comenzó como un modesto servicio de seguridad para casas de fin de semana en San Miguel del Monte ha evolucionado y se ha adaptado al crecimiento y desarrollo de la región. Hoy, nuestra presencia se extiende atendiendo a una nueva gama de clientes que incluye residencias permanentes, comercios e industrias.
+
+Al confiar en CMM para sus proyectos de seguridad electrónica, puede estar seguro de que recibirá el apoyo de una empresa sólida y comprometida con su protección.
+
 </p>
  
             
