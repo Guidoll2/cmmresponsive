@@ -30,7 +30,7 @@ export default function Home() {
     /></a>
 
 <a className='' href='#NAVBAR'> <Image
-      className="ml-5 opacity-80 z-10 fixed left-0 bottom-5 md:fixed md:w-[80px] md:bottom-10"
+      className="ml-5 opacity-80 z-10 invisible left-0 bottom-5 md:fixed md:visible md:w-[80px] md:bottom-10"
       src="/flecha.svg"
       alt="CMM Logo"
       width={60}
@@ -69,10 +69,10 @@ export default function Home() {
 
 <div id='CONTENEDORALARMA' className='grid grid-rows-1 bg-gradient-to-l from-blue-950 to-blue-900 p-4 mt-28 shadow-2xl md:mt-60'>
    
-<h1 className='font-[] font-bold text-5xl text-center text-stone-100 py-2 md:text-7xl '>Alarmas inalámbricas monitoreadas</h1>
-<h2 className='py-4 text-2xl text-stone-100 text-center md:text-4xl'>Hogar seguro, diseño sin cables</h2>
+<h1 className='font-[raleway] font-bold text-5xl text-center text-stone-100 py-2 md:text-7xl '>Alarmas monitoreadas</h1>
+<h2 className='py-4 font-[raleway] text-2xl text-stone-100 text-center md:text-4xl'>Hogar seguro, diseño sin cables</h2>
 
-<div className='flex grid grid-cols-2 gap-2 mt-4 md:w-full md:grid-cols-4 md:gap-4 md:ml-10'>
+<div className='flex grid grid-cols-2 gap-2 mt-4 md:w-full md:grid-cols-4 md:gap-4 md:ml-10 opacity-80'>
 <Image
       className="rounded-xl shadow-xl"
       src="/sensorpuerta.jpg"
@@ -193,12 +193,12 @@ export default function Home() {
 
 <div id='CONTENEDORCCTV' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 mt-2 p-4 '>
 
-<h1 className='font-[] font-bold text-center text-4xl text-stone-200 mt-6'>Cámaras de seguridad </h1>
+<h1 className='font-[raleway] font-bold text-center text-4xl text-stone-200 mt-6'>Cámaras de seguridad </h1>
 
 <h2 className='font-[] text-center text-2xl text-stone-200 mt-4'>Tu propiedad en tu celular </h2>
 
 
-<div className='flex grid grid-cols-2 gap-4 md:grid-cols-4'>
+<div className='flex grid grid-cols-2 gap-4 md:grid-cols-4 opacity-80'>
 <Image
       className="rounded-xl shadow-xl h-60"
       src="/cctv.jpg"
@@ -241,7 +241,7 @@ export default function Home() {
 
 </div>
 
-<h1 id='DETAILALARM'className='text-stone-100 font-bold w-full rounded-2xl text-4xl text-center mt-20 md:text-6xl'>¿Como funciona?</h1>
+<h1 id='DETAILALARM'className='text-stone-100 font-[raleway] font-bold w-full rounded-2xl text-4xl text-center mt-20 md:text-6xl'>¿Como funciona?</h1>
 
 
 
@@ -309,7 +309,7 @@ export default function Home() {
 
 
 <div id='CONTENEDORINDUSTRIAS' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 to-blue-900 mt-2 p-4'>
-<h1 className='font-[] font-bold text-4xl text-stone-200 mt-5 text-center'>Industrias y comercios</h1>
+<h1 className='font-[raleway] font-bold text-4xl text-stone-200 mt-5 text-center'>Industrias y comercios</h1>
 <h2 className='font-[] text-2xl text-stone-200 mt-4 text-center'>Controla y optimiza tus negocios</h2>
 
 
@@ -376,7 +376,7 @@ export default function Home() {
 <div id='CONTENEDORCONTACTO' className='grid grid-rows-2 bg-gradient-to-t from-blue-950 to-blue-900 mt-2 p-4 md:'>
 
   
-<h1 className='font-[] font-bold text-4xl text-stone-200 mt-5 text-center'>Contáctenos</h1>
+<h1 className='font-[raleway] font-bold text-4xl text-stone-200 mt-5 text-center'>Contáctenos</h1>
 <h2 className='font-[] font-light text-2xl text-stone-200 mt-3 text-center'>Un asesor esta listo para atenderlo</h2>
 
 <div className='grid grid-rows-3 grid-cols-1 p-4 md:grid-rows-5 gap-5'>
@@ -496,9 +496,9 @@ export default function Home() {
 
 <div id='CONTENEDORIDENTIDAD' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900  mt-2 p-4'>
 
-<h1 className='font-[] font-bold text-4xl text-stone-100 z-20'>¿Quienes somos? </h1>
+<h1 className='font-[raleway] font-bold text-4xl text-stone-100 z-20'>¿Quienes somos? </h1>
 
-<h2 className='font-[] font-bold text-xl text-stone-100 py-4 '>Mas de 12 años cuidandote</h2>
+<h2 className='font-[raleway] font-bold text-xl text-stone-100 py-4 '>Mas de 12 años cuidandote</h2>
 <p className='font-[] text-stone-200 text-xl font-light'> 
 
 CMM se destaca como una empresa líder en el campo de la seguridad electrónica, con más de una década de experiencia en el sector. Nuestro enfoque se ha centrado en brindar servicios de alta calidad en las localidades de San Miguel del Monte y Cañuelas, atendiendo a una diversa gama de clientes.
