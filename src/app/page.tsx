@@ -31,7 +31,7 @@ export default function Home() {
     /></a>
 
 <a className='' href='#NAVBAR'> <Image
-      className="ml-5 opacity-80  invisible left-0 bottom-5 md:fixed md:visible md:w-[80px] md:bottom-10"
+      className="ml-5 opacity-80  invisible left-0 bottom-5 md:fixed md:visible md:w-[80px] md:bottom-10 z-[100]"
       src="/flecha.svg"
       alt="CMM Logo"
       width={60}
@@ -40,20 +40,22 @@ export default function Home() {
     /></a>
 
 
-<div id='NAVBAR' className="fixed z-[100] md:absolute h-[75px] place-items-center grid grid-cols-1 w-screen border-b-[2px] border-blue-700 shadow-2xl bg-gradient-to-r from-stone-100 to-stone-400 md:h-40 md:border-none">
+<div id='NAVBAR' className="absolute  z-[100] md:absolute h-[75px]  grid grid-cols-1 w-screen border-b-[3px] border-blue-700 shadow-2xl bg-gradient-to-l from-blue-950 to-stone-200 md:h-40 md:border-none">
   
 
-  <div className='grid grid-cols-3 ml-5 md:w-screen md:place-items-center '>
-  <SectionTitle></SectionTitle>
+  <div className='grid grid-cols-2  md:w-screen md:place-items-center '>
   <Image
-      className="w-28 md:w-[200px] "
+      className="w-auto md:w-[200px] "
       src="/logosinfondo.png"
       alt="CMM Logo"
       width={1000}
       height={0}
       priority
     />
- <h2 className='text-[20px] text-blue-950 md:text-4xl'>Seguridad Electrónica</h2>
+    <div className='absolute right-2 top-3'>
+  <SectionTitle></SectionTitle>
+  </div>
+
   
 
 
@@ -61,12 +63,15 @@ export default function Home() {
 </div>
 </div>
 
-<div className='fixed z-[100] w-screen mt-[75px] bg-gradient-to-r from-stone-100 to-stone-300 md:mt-[150px] md:absolute '>
+<div id='MENUDESPLEGABLE' className='fixed z-[99] h-[35px] w-[35px] opacity- rounded-2xl right-0 bottom-[90px] bg-gradient-to-r from-sonte-100 to-stone-200 md:mt-[150px] md:absolute '>
   <MenuDesplegable></MenuDesplegable>
   </div>
   
 {/**FIN DEL DIV DEL NAVBAR */}
 
+<div className='flex  grid grid-rows-1 mt-40 place-items-center '>
+<SectionTitle2></SectionTitle2>
+</div>
 
 <div id='CONTENEDORALARMA' className='grid grid-rows-1 bg-gradient-to-l from-blue-950 to-blue-900 p-4 mt-20 shadow-2xl md:mt-60'>
    
@@ -112,7 +117,7 @@ export default function Home() {
 
 </div>
 
-<div className=''>
+<div id='COMOFUNCIONA' className=''>
 <ComoFunciona></ComoFunciona>
 </div>
 
