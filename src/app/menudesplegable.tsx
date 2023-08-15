@@ -9,12 +9,12 @@ const MenuDesplegable = () => {
     
            
       <button
-        className="absolute mt-[37px] left-[8px] text-blue-950 z-10"
+        className="absolute mt-[60px] left-[15px] text-blue-950 z-10"
         onClick={() => setMenuVisible(!menuVisible)}
       >
         
 
-        <svg height="25" width="27" viewBox="0 0 32 32"  xmlns="http://www.w3.org/2000/svg"><g id="burger,-menu,-more,-sort" fill="none" fill-rule="evenodd"><path id="Shape" d="m23 23v2h-24v-2zm0-8v2h-40v-2zm0-8v2h-24v-2z" fill="#172554" fill-rule="nonzero"/></g></svg>
+        <svg height="40" width="40" viewBox="0 0 32 32"  xmlns="http://www.w3.org/2000/svg"><g id="burger,-menu,-more,-sort" fill="none" fill-rule="evenodd"><path id="Shape" d="m23 23v2h-24v-2zm0-8v2h-40v-2zm0-8v2h-24v-2z" fill="#172554" fill-rule="nonzero"/></g></svg>
 
 
    

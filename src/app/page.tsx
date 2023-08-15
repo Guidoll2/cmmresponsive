@@ -31,7 +31,7 @@ export default function Home() {
     /></a>
 
 <a className='' href='#NAVBAR'> <Image
-      className="ml-5 opacity-80  invisible left-0 bottom-5 md:fixed md:visible md:w-[80px] md:bottom-10 z-[100]"
+      className="ml-5 opacity-80 invisible left-0 bottom-5 md:fixed md:visible md:w-[80px] md:bottom-10 z-[100]"
       src="/flecha.svg"
       alt="CMM Logo"
       width={60}
@@ -40,7 +40,7 @@ export default function Home() {
     /></a>
 
 
-<div id='NAVBAR' className="absolute  z-[100] md:absolute h-[75px]  grid grid-cols-1 w-screen border-b-[3px] border-blue-700 shadow-2xl bg-gradient-to-l from-blue-950 to-stone-200 md:h-40 md:border-none">
+<div id='NAVBAR' className="absolute w-screen z-[100] h-[105px]  grid grid-cols-1 w- border-b-[3px] border-blue-700 shadow-2xl bg-gradient-to-l from-blue-950 to-stone-200 md:h-40 md:border-none">
   
 
   <div className='grid grid-cols-2  md:w-screen md:place-items-center '>
@@ -52,7 +52,7 @@ export default function Home() {
       height={0}
       priority
     />
-    <div className='absolute right-2 top-3'>
+    <div className='absolute right-10 top-5'>
   <SectionTitle></SectionTitle>
   </div>
 
@@ -63,13 +63,13 @@ export default function Home() {
 </div>
 </div>
 
-<div id='MENUDESPLEGABLE' className='fixed z-[99] h-[35px] w-[35px] opacity- rounded-2xl right-0 bottom-[90px] bg-gradient-to-r from-sonte-100 to-stone-200 md:mt-[150px] md:absolute '>
+<div id='MENUDESPLEGABLE' className='fixed z-[99] right-2 h-[60px] w-[60px] opacity- rounded-[100px] right-0 bottom-[90px] bg-gradient-to-r from-sonte-100 to-stone-200 md:mt-[150px] md:absolute '>
   <MenuDesplegable></MenuDesplegable>
   </div>
   
 {/**FIN DEL DIV DEL NAVBAR */}
 
-<div className='flex  grid grid-rows-1 mt-40 place-items-center '>
+<div className='flex grid grid-rows-1 mt-40 place-items-center '>
 <SectionTitle2></SectionTitle2>
 </div>
 
@@ -139,7 +139,7 @@ export default function Home() {
 
 <div className='mt-5 '>
 <h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold'>Monitoreo las 24 horas</h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>La alarma emite una señal que instantáneamente llega a nuestros servidores.</p>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>Ante cualquier evento de tu alarma nuestra central de servicio estará lista para operar. Todos los días, todo el día.</p>
 </div>
 
  
@@ -157,7 +157,7 @@ export default function Home() {
 
 <div className='grid grid-rows-1 grid-cols-1 md:mt-20'>
 <h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-bold'>Notificaciones al instante </h1>
-<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center'>En el instante que la alarma suena una notificación se genera en tu celular. </p>
+<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center'>En el instante que se genera un evento de tu alarma una notificación llega a tu celular. </p>
 </div>
 
 
@@ -172,7 +172,7 @@ export default function Home() {
 
 <div className='grid grid-rows-1 grid-cols-1 mt- md:mt-20'>
 <h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-bold'>Asistencia telefónica </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Nuestros operadores inician el protocolo de llamadas.</p>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Simultaneamente nuestros operadores se ponen en contacto para asistirte de manera profesional.</p>
 </div>
 
 <Image
@@ -185,7 +185,7 @@ export default function Home() {
     />   
 
 <h1 className='text-2xl text-stone-100 mt-5 md:text-3xl md:mt-20 font-bold'>Llamada al 911</h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>De ser necesario se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
 
 </div>
 
@@ -204,29 +204,29 @@ export default function Home() {
 <h2 className='font-[] text-center md:text-4xl text-2xl text-stone-200 mt-4'>Tu propiedad en tu celular </h2>
 
 
-<div className='flex grid grid-cols-2 gap-4 md:grid-cols-4 opacity-80'>
+<div className='flex grid grid-cols-2 gap-2 md:grid-cols-4 opacity-80 h-96'>
 <Image
-      className="rounded-xl shadow-xl h-60"
+      className="rounded-xl shadow-xl w-full h-auto"
       src="/cctv.jpg"
+      alt="CMM Logo"
+      width={400}
+      height={200}
+      priority
+    />
+
+<Image
+      className="rounded-xl shadow-xl w-full h-auto"
+      src="/cctv2.jpg"
       alt="CMM Logo"
       width={1000}
       height={200}
       priority
     />
 
-<Image
-      className="rounded-xl shadow-xl h-60"
-      src="/cctv2.jpg"
-      alt="CMM Logo"
-      width={400}
-      height={200}
-      priority
-    />
-
     
 <Image
-      className="rounded-xl shadow-xl h-60"
-      src="/cctvshop.jpg"
+      className="rounded-xl shadow-xl w-full h-auto"
+      src="/CCTV1.jpg"
       alt="CMM Logo"
       width={400}
       height={200}
@@ -236,8 +236,8 @@ export default function Home() {
 
 
 <Image
-      className="rounded-xl shadow-xl h-60"
-      src="/cel.jpg"
+      className="rounded-xl shadow-xl w-full h-auto"
+      src="/cctvphone.jpg"
       alt="CMM Logo"
       width={400}
       height={200}
