@@ -43,9 +43,9 @@ export default function Home() {
 <div id='NAVBAR' className="absolute w-screen z-[100] h-[105px]  grid grid-cols-1 border-b-[3px] border-blue-700 shadow-2xl bg-gradient-to-l from-blue-950 to-stone-200 md:h-40 ">
   
 
-  <div className='grid grid-cols-2  md:w-screen md:absolute md:top-5 '>
+  <div className='grid grid-cols-2 md:w-screen md:absolute md:top-5 '>
   <Image
-      className="w-auto md:w-[200px] "
+      className="w-[170px] md:w-[200px] "
       src="/logosinfondo.png"
       alt="CMM Logo"
       width={1000}
@@ -63,7 +63,7 @@ export default function Home() {
 </div>
 </div>
 
-<div id='MENUDESPLEGABLE' className='fixed z-[99] right-2 h-[60px] w-[60px] opacity- rounded-[100px] right-0 bottom-[90px] bg-gradient-to-r from-stone-100 to-stone-200 md:top-48 md:right-5 md:rounded-[20px] md: md:absolute '>
+<div id='MENUDESPLEGABLE' className='fixed z-[99] right-2 h-[60px] w-[60px] opacity- rounded-[20px] right-0 bottom-[90px] bg-gradient-to-r from-stone-100 to-stone-200 md:top-48 md:right-5 md:rounded-[20px] md: md:absolute '>
   <MenuDesplegable></MenuDesplegable>
   </div>
   
@@ -78,7 +78,7 @@ export default function Home() {
 <h1 className='font-[raleway] font-bold  text-center text-stone-100 py-2 md:text-7xl text-5xl '>Alarmas monitoreadas</h1>
 <h2 className='py-4 font-[raleway]  text-stone-100 text-center md:text-4xl text-2xl'>Hogar seguro, diseño sin cables</h2>
 
-<div className='flex grid grid-cols-2 gap-2 mt-4 md:w-full md:grid-cols-4 md:gap-4 md:ml-10 opacity-80'>
+<div className='flex grid grid-cols-2 gap-1 mt-4 md:w-full md:grid-cols-4 md:gap-4 md:ml-10 opacity-80'>
 <Image
       className="rounded-xl shadow-xl"
       src="/sensorpuerta.jpg"
@@ -121,25 +121,22 @@ export default function Home() {
 <ComoFunciona></ComoFunciona>
 </div>
 
-{/** 
-<h1 id='DETAILALARM'className='text-stone-200 text-4xl text-center mt-20 md:text-6xl'>¿Como funciona?</h1>
-*/}
-<div className='p-4 grid grid-cols-1 gap-4 mt-8 place-items-center md:place-items-center '>
+<div className='p-4 grid grid-cols-1 gap-4 mt-24 place-items-center md:place-items-center '>
 
  
 <Image
-      className="rounded-xl ml-5 opacity-90 md:w-[180px] "
+      className="rounded-xl opacity-90 md:w-[180px] "
       src="/casaf.svg"
       alt="CMM Logo"
-      width={110}
+      width={100}
       height={200}
       priority
     />   
 
 
 <div className='mt-5 '>
-<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold'>Monitoreo las 24 horas</h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>Ante cualquier evento de tu alarma nuestra central de servicio estará lista para operar.</p>
+<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold'>Monitoreamos tu equipo las 24 horas</h1>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>Ante un evento de tu alarma nuestra central de servicio estará lista para operar.</p>
 </div>
 
  
@@ -155,9 +152,9 @@ export default function Home() {
     
 </div>
 
-<div className='grid grid-rows-1 grid-cols-1 md:mt-20'>
+<div className='grid grid-rows-1 grid-cols-1 '>
 <h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-bold'>Notificaciones al instante </h1>
-<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center'>En el momento que se genera un evento de tu alarma una notificación llega a tu celular. </p>
+<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center'>En el momento que se genera un evento una notificación llega a tu celular. </p>
 </div>
 
 
@@ -170,9 +167,9 @@ export default function Home() {
       priority
     />   
 
-<div className='grid grid-rows-1 grid-cols-1 mt- md:mt-20'>
+<div className='grid grid-rows-1 grid-cols-1 '>
 <h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-bold'>Asistencia telefónica </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Simultaneamente nuestros operadores se ponen en contacto para brindarte asistencia de manera profesional.</p>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Simultáneamente nuestros operadores se ponen en contacto para brindarte asistencia de manera profesional.</p>
 </div>
 
 <Image
@@ -184,7 +181,7 @@ export default function Home() {
       priority
     />   
 
-<h1 className='text-2xl text-stone-100 mt-5 md:text-3xl md:mt-20 font-bold'>Llamada al 911</h1>
+<h1 className='text-2xl text-stone-100 mt-5 md:text-3xl font-bold'>Llamada al 911</h1>
 <p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>De ser necesario se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
 
 </div>
@@ -204,19 +201,19 @@ export default function Home() {
 <h2 className='font-[] text-center md:text-4xl text-2xl text-stone-200 mt-4'>Tu propiedad en tu celular </h2>
 
 
-<div className='flex grid grid-cols-2 gap-2 md:grid-cols-4 opacity-80 h-96'>
+<div className='flex grid grid-cols-2 gap-4 md:grid-cols-4 opacity-80 h-96'>
 <Image
-      className="rounded-xl shadow-xl w-full h-auto"
-      src="/cctv.jpg"
+      className="rounded-xl shadow-xl w-full h-full"
+      src="/cctvadobe.jpeg"
       alt="CMM Logo"
-      width={400}
-      height={200}
+      width={500}
+      height={100}
       priority
     />
 
 <Image
-      className="rounded-xl shadow-xl w-full h-auto"
-      src="/cctv2.jpg"
+      className="rounded-xl shadow-xl w-full h-full"
+      src="/cctv.jpg"
       alt="CMM Logo"
       width={1000}
       height={200}
@@ -225,7 +222,7 @@ export default function Home() {
 
     
 <Image
-      className="rounded-xl shadow-xl w-full h-auto"
+      className="rounded-xl shadow-xl w-full h-full"
       src="/CCTV1.jpg"
       alt="CMM Logo"
       width={400}
@@ -236,7 +233,7 @@ export default function Home() {
 
 
 <Image
-      className="rounded-xl shadow-xl w-full h-auto"
+      className="rounded-xl shadow-xl w-full h-full"
       src="/cctvphone.jpg"
       alt="CMM Logo"
       width={400}
@@ -247,64 +244,59 @@ export default function Home() {
 
 </div>
 
-<h1 id='DETAILALARM'className='text-stone-100 font-[raleway] font-bold w-full rounded-2xl text-4xl text-center mt-20 md:text-6xl'>¿Como funciona?</h1>
-
-
-
-<div className='p-4 grid grid-cols-1 gap-4 mt-8 place-items-center md:place-items-center '>
+<div className='p-4 grid grid-cols-1 gap-4 mt-24 place-items-center md:place-items-center '>
 
  
 <Image
-      className="rounded-xl opacity-90 ml-10 md:w-[180px] "
-      src="/celu.svg"
+      className="rounded-xl opacity-90 md:w-[180px] "
+      src="/cctvhome1.svg"
       alt="CMM Logo"
-      width={120}
+      width={130}
       height={200}
       priority
     />   
 
 
-<div className='mt-5'>
-<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold'>Notificaciones en tiempo real</h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>Recibí y gestiona notificaciones de tu sistema de video vigilancia de manera instantanea.</p>
+<div className='mt-5 '>
+<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold'>Visualización en directo las 24 horas </h1>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>Estés donde estés vas a poder ver tu propiedad.</p>
+
 </div>
 
  
-<div className='grid grid-cols-1 mt-8'>
+<div className='grid grid-cols-1 mt-20'>
 <Image
-      className="rounded-xl opacity-90 mt-8 ml-5 md:w-[180px] md:mt-20"
-      src="/cctvs.svg"
+      className="rounded-xl opacity-90 mt-8 ml-8 md:w-[180px] md:mt-20"
+      src="/celu.svg"
       alt="CMM Logo"
-      width={120}
+      width={140}
       height={200}
       priority
     />  
     
 </div>
 
-<div className='grid grid-rows-1 grid-cols-1 md:mt-20'>
-<h1 className='text-xl text-center mt-5 text-stone-100 md:text-3xl font-bold '>Visualización en directo las 24 horas </h1>
-<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center'>Estés donde estés vas a poder ver tu propiedad, dandote el control de cada situación.</p>
+<div className='grid grid-rows-1 grid-cols-1'>
+<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold'>Notificaciones en tiempo real </h1>
+<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center'>Recibís notificaciones de tu sistema de video vigilancia de manera instantánea (Cortes de luz, internet, detección de movimiento entre otros).</p>
 </div>
 
 
 <Image
-      className="rounded-xl h-full mt-8 ml-5 md:w-[180px] md:mt-20"
+      className="rounded-xl h-full mt-20 ml-2 md:w-[170px] md:mt-20"
       src="/almacenamiento.svg"
       alt="CMM Logo"
-      width={120}
+      width={110}
       height={200}
       priority
     />   
 
-<div className='grid grid-rows-1 grid-cols-1 mt- md:mt-20'>
-<h1 className='text-xl text-center mt-5 text-stone-100 md:text-3xl font-bold'>Grabación continua </h1>
+<div className='grid grid-rows-1 grid-cols-1'>
+<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold'>Grabación continua </h1>
 <p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
 </div>
 </div>
- 
- 
-          <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
+   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
           
           <button
         className="bg-stone-100 mt-8 rounded-xl mt-5 text-2xl w-full h-[60px] text-blue-950 font-bold">COTIZA TU EQUIPO ACÁ</button></a>
@@ -319,17 +311,64 @@ export default function Home() {
 <h2 className='font-[] md:text-4xl text-2xl text-stone-200 mt-4 text-center'>Controla y optimiza tus negocios</h2>
 
 
+
+<div className='flex grid grid-cols-2 gap-4 md:grid-cols-4 opacity-80 h-96'>
+<Image
+      className="rounded-xl shadow-xl w-full h-full"
+      src="/indusrty3.jpeg"
+      alt="CMM Logo"
+      width={500}
+      height={100}
+      priority
+    />
+
+<Image
+      className="rounded-xl shadow-xl w-full h-full"
+      src="/hands.jpg"
+      alt="control acceso industria"
+      width={1000}
+      height={200}
+      priority
+    />
+
+    
+<Image
+      className="rounded-xl shadow-xl w-full h-full"
+      src="/indusrty1.jpeg"
+      alt="CMM Logo"
+      width={1000}
+      height={1000}
+      priority
+    />
+
+
+
+<Image
+      className="rounded-xl shadow-xl w-full h-full"
+      src="/indusrty2.jpeg"
+      alt="CMM Logo"
+      width={400}
+      height={200}
+      priority
+    />
+
+
+</div>
+
+
+
 <div className='p-4 grid grid-cols-1 gap-4 mt-8 place-items-center md:place-items-center  '>
 
  
 <Image
-      className="rounded-xl opacity-90 mt-5 md:w-[180px] "
+      className="rounded-xl opacity-90 mt-20 md:w-[180px] "
       src="/acceso.svg"
       alt="CMM Logo"
       width={120}
       height={200}
       priority
     />   
+
 
 
 <div className=''>
@@ -339,7 +378,7 @@ export default function Home() {
 
 <div className='grid grid-cols-1 mt-5'>
 <Image
-      className="rounded-xl opacity-90 mt-10 md:w-[180px] md:mt-20"
+      className="rounded-xl opacity-90 mt-20 md:w-[180px] md:mt-20"
       src="/automatizar.svg"
       alt="CMM Logo"
       width={120}
@@ -349,7 +388,7 @@ export default function Home() {
     
 </div>
 
-<div className='grid grid-cols-1 md:mt-20'>
+<div className='grid grid-cols-1'>
 <h1 className='text-xl text-center text-stone-100 md:text-3xl font-bold'>Mejora de procesos productivos </h1>
 <p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Recibi alertas del estado de tus equipos de producción instantáneamente</p>
 </div>
@@ -357,7 +396,7 @@ export default function Home() {
 
 <div className=''>
 <Image
-      className="mt-16 ml-5 md:w-[180px] md:mt-20"
+      className="mt-20 ml-10 md:w-[180px] md:mt-20"
       src="/celu.svg"
       alt="CMM Logo"
       width={120}
@@ -369,6 +408,24 @@ export default function Home() {
 <h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold'>Seguimiento de empleados</h1>
 <p className='text-stone-200 text-xl md:text-2xl text-center mt-3'>Generá tareas para tus empleados que queden registradas en tu app de control</p>
 </div>
+
+<Image
+      className="rounded-xl opacity-90 mt-20 md:w-[180px] "
+      src="/cctvs.svg"
+      alt="CMM Logo"
+      width={130}
+      height={200}
+      priority
+    />   
+
+
+<div className='mt-5 '>
+<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold'>CCTV Motorizado </h1>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100'>Domos con IA, motorizados y 360° de ángulo de cobertura.</p>
+
+</div>
+
+
 </div>
  
 
@@ -379,30 +436,174 @@ export default function Home() {
 
 </div>
 
-<div id='CONTENEDORCONTACTO' className='grid grid-rows-2 bg-gradient-to-t from-blue-950 to-blue-900 mt-2 p-4 md:'>
+<div id='CONTENEDORCONTACTO' className='grid grid-rows-1 bg-gradient-to-t from-blue-950 to-blue-900 mt-2 p-4 md:'>
 
   
-<h1 className='font-[raleway] font-bold md:text-7xl text-5xl text-stone-200 mt-5 text-center'>Contáctenos</h1>
-<h2 className='font-[] font-light md:text-4xl text-2xl text-stone-200 mt-3 text-center'>Un asesor esta listo para atenderlo</h2>
+<h1 className='font-[raleway] font-light  md:text-7xl text-5xl text-stone-200 mt-5 text-center'>Contáctenos</h1>
 
-<div className='grid grid-rows-3 grid-cols-1 p-4 md:grid-rows-5 gap-5'>
-<div className="flex p-2 items-center">
+{/** 
+<h2 className='font-[] font-light md:text-4xl text-2xl text-stone-200 mt-3 text-center'>Un asesor esta listo para atenderlo</h2>
+*/}
+<div className='grid grid-cols-1 p-2 gap-8 place-items-center mt-24 md:grid-cols-5 md:gap-0 md:p-0'>
+
+<div id='ICONOWHATSAPPDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0'>
+
+  <div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
 <a href='https://wa.me/+5491133324034' target='_blank'  >
 <Image
-          className=""
-          src="/wcolor.svg"
+          className="flex py-4 ml-4 md:w-[60px] md:py-8 md:ml-8"
+          src="/whatsappmaximo.svg"
           alt="whatsapplogo"
           
-          width={44}
+          width={25}
           height={0}
           priority
         />
-        </a> 
+        </a>
+ </div>      
+<div className=''>
+<a href='https://wa.me/+5491133324034' target='_blank'  >
+    <h2 className='text-xl font-light text-stone-100 md:p-4 md:text-3xl'>Whatsapp</h2>
+   
 
-  <div className="text-xl font-light text-white p-2 md:p-4">Whatsapp: 15-3332-4034</div>
-  
+  </a> 
+
+  </div>
+
+  </div>
+
+
+<div id='ICONOMAILDELAMOR' className='grid grid-cols-1 gap-1 place-items-center mt-5 md:mt-0 '>
+
+<div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
+<a href='mailto:cmm@alarmascmm.com'>
+<Image
+        className="flex py-4 ml-4 md:w-[60px] md:py-8 md:ml-8"
+        src="/mailmaximo.svg"
+        alt="maillogo"
+        
+        width={25}
+        height={0}
+        priority
+      />
+      </a>
+</div>      
+<div className=''>
+<a href='mailto:cmm@alarmascmm.com'>
+  <h2 className='text-xl font-light text-stone-100 px-4 md:p-4 md:text-3xl '>Mail</h2>
+ 
+
+</a> 
+
 </div>
 
+
+</div>
+
+<div id='ICONOTELDELAMOR' className='grid grid-cols-1 gap-1 mt-5 place-items-center md:mt-0'>
+
+  <div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
+  <a href='tel:+541133324034' >
+<Image
+          className="py-4 ml-4 md:w-[60px] md:py-8 md:ml-8"
+          src="/telmaximo.svg"
+          alt="whatsapplogo"
+          
+          width={27}
+          height={0}
+          priority
+        />
+        </a>
+ </div>      
+<div className=''>
+<a href='tel:+541133324034' >
+    <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl md:'>Teléfono</h2>
+   
+
+  </a> 
+
+  </div>
+
+  </div>
+
+
+  <div id='ICONOFACEBOOKDELAMOR' className='grid grid-cols-1 gap-1 place-items-center mt-5 md:mt-0'>
+
+<div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
+<a
+        href="https://www.facebook.com/CMM.ALARMAS"
+        target="_blank"
+        className=""
+      >
+
+<Image
+        className="flex py-4 ml-4 md:w-[60px] md:py-8 md:ml-8"
+        src="/facebookmaximo.svg"
+        alt="whatsapplogo"
+        
+        width={30}
+        height={0}
+        priority
+      />
+      </a>
+</div>      
+<div className=''>
+<a
+        href="https://www.facebook.com/CMM.ALARMAS"
+        target="_blank"
+        className=""
+      >
+
+  <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl '>Facebook</h2>
+ 
+
+</a> 
+
+</div>
+
+</div>
+
+
+<div id='ICONOIGDELAMOR' className='grid grid-cols-1 gap-1 place-items-center mt-5 md:mt-0'>
+
+<div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px]  md:w-[120px] md:h-[120px]'>
+<a
+        href="https://www.instagram.com/alarmascmm/"
+        target="_blank"
+        className=""
+      >
+
+<Image
+        className="flex py-4 ml-4 md:py-8 md:ml-8 md:w-[60px]"
+        src="/igmaximo.svg"
+        alt="whatsapplogo"
+        
+        width={30}
+        height={0}
+        priority
+      />
+      </a>
+</div>      
+<div className=''>
+<a
+        href="https://www.instagram.com/alarmascmm/"
+        target="_blank"
+        className=""
+      >
+
+  <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl'>Instagram</h2>
+ 
+
+</a> 
+
+</div>
+
+</div>
+
+
+
+  
+{/*
 <div className="flex p-2 items-center">
 <a href='mailto:cmm@alarmascmm.com' >
 <Image
@@ -463,14 +664,14 @@ export default function Home() {
 <a
         href="https://www.instagram.com/alarmascmm/"
         target="_blank"
-        className="mr-2"
+        className=""
       >
 <Image
-          className=""
+          className="flex p-2 items-center"
           src="/instagram.svg"
           alt="logofacebook"
           
-          width={44}
+          width={64}
           height={0}
           priority
         />
@@ -478,12 +679,12 @@ export default function Home() {
 
 <div className="text-xl p-2 mt-4 font-light text-white md:mt-1">Instagram.com/alarmascmm </div>
 
+   </div>*/}
 </div>
-</div>
 
 
 
-<div className="grid grid-cols-1 p-4 place-items-center ">
+<div className="grid grid-cols-1 p-4 place-items-center mt-20">
 
 <Image
           src="/reloj.svg"
@@ -508,9 +709,7 @@ export default function Home() {
 <p className='font-[] text-stone-200 text-xl font-light'> 
 
 
-CMM se destaca como una empresa líder en el campo de la seguridad electrónica, con más de una década de experiencia
-
-Lo que comenzó como un modesto servicio de seguridad para casas de fin de semana en San Miguel del Monte ha evolucionado y se ha adaptado al crecimiento y desarrollo de la región. Hoy, nuestra presencia se extiende atendiendo a una nueva gama de clientes que incluye residencias permanentes, comercios e industrias.
+CMM se destaca como empresa líder en seguridad electrónica. Con más de una década de experiencia, lo que comenzó como un modesto servicio de seguridad para casas de fin de semana en San Miguel del Monte ha evolucionado y se ha adaptado al crecimiento y desarrollo de la región. Hoy, nuestra presencia se extiende atendiendo a una nueva gama de clientes que incluye residencias permanentes, comercios e industrias.
 
 Al confiar en CMM para sus proyectos de seguridad electrónica, puede estar seguro de que recibirá el apoyo de una empresa sólida y comprometida con su protección.
 
