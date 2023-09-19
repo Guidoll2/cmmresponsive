@@ -1,5 +1,5 @@
 'use client'
-
+import Header from './header';
 import Image from 'next/image'
 import MenuDesplegable from './menudesplegable'
 import ImageSlider from './slider';
@@ -20,6 +20,7 @@ export default function Home() {
     
     <main className="block grid overflow-hidden bg-gradient-to-r from-stone-100 to-stone-400 md:grid md:grid-cols-1">
     
+    <Header />
     
     <a className='' href='https://wa.me/+5491133324034' target='_blank'> <Image
       className="ml-5 opacity-80 z-10 fixed right-2 bottom-5 md:fixed md:w-[80px] md:bottom-10"
@@ -189,7 +190,7 @@ export default function Home() {
           <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
           
           <button
-        className="mt-8 bg-stone-100 rounded-xl mt-5 text-2xl w-full h-[60px] text-blue-950 font-bold">COTIZA TU EQUIPO ACÁ</button></a>
+        className="mt-8 bg-stone-100 rounded-xl mt-5 text-2xl w-full h-[60px] text-blue-950 font-bold">COTIZA TU EQUIPO</button></a>
          
 
 </div>
@@ -299,7 +300,8 @@ export default function Home() {
    <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
           
           <button
-        className="bg-stone-100 mt-8 rounded-xl mt-5 text-2xl w-full h-[60px] text-blue-950 font-bold">COTIZA TU EQUIPO ACÁ</button></a>
+        className="bg-stone-100 mt-8 rounded-xl mt-5 text-2xl w-full h-[60px] text-blue-950 font-bold">COTIZA TU EQUIPO
+        </button></a>
          
 
 </div>
@@ -431,7 +433,7 @@ export default function Home() {
 
   <div className='mt-20'>
   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
-          <button className=' bg-stone-100 rounded-xl mt-5 text-2xl  w-full text-blue-950 h-[60px] font-bold'>COTIZA TU EQUIPO ACÁ</button></a>
+          <button className=' bg-stone-100 rounded-xl mt-5 text-2xl  w-full text-blue-950 h-[60px] font-bold'>COTIZA TU EQUIPO</button></a>
           </div>
 
 </div>
@@ -444,7 +446,7 @@ export default function Home() {
 {/** 
 <h2 className='font-[] font-light md:text-4xl text-2xl text-stone-200 mt-3 text-center'>Un asesor esta listo para atenderlo</h2>
 */}
-<div className='grid grid-cols-1 p-2 gap-8 place-items-center mt-24 md:grid-cols-5 md:gap-0 md:p-0'>
+<div className='grid grid-cols-3 p-2 gap-8 place-items-center mt-24 md:grid-cols-5 md:grid-cols-3 md:gap-0 md:p-0'>
 
 <div id='ICONOWHATSAPPDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0'>
 
@@ -473,7 +475,7 @@ export default function Home() {
   </div>
 
 
-<div id='ICONOMAILDELAMOR' className='grid grid-cols-1 gap-1 place-items-center mt-5 md:mt-0 '>
+<div id='ICONOMAILDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0 '>
 
 <div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
 <a href='mailto:cmm@alarmascmm.com'>
@@ -500,7 +502,7 @@ export default function Home() {
 
 </div>
 
-<div id='ICONOTELDELAMOR' className='grid grid-cols-1 gap-1 mt-5 place-items-center md:mt-0'>
+<div id='ICONOTELDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0'>
 
   <div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
   <a href='tel:+541133324034' >
@@ -527,7 +529,12 @@ export default function Home() {
   </div>
 
 
-  <div id='ICONOFACEBOOKDELAMOR' className='grid grid-cols-1 gap-1 place-items-center mt-5 md:mt-0'>
+
+
+</div>
+
+<div className='grid grid-cols-2 mt-8'>
+<div id='ICONOFACEBOOKDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0'>
 
 <div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
 <a
@@ -563,8 +570,7 @@ export default function Home() {
 
 </div>
 
-
-<div id='ICONOIGDELAMOR' className='grid grid-cols-1 gap-1 place-items-center mt-5 md:mt-0'>
+<div id='ICONOIGDELAMOR' className='grid grid-cols-1 gap-1 place-items-center  md:mt-0'>
 
 <div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px]  md:w-[120px] md:h-[120px]'>
 <a
@@ -599,90 +605,7 @@ export default function Home() {
 </div>
 
 </div>
-
-
-
-  
-{/*
-<div className="flex p-2 items-center">
-<a href='mailto:cmm@alarmascmm.com' >
-<Image
-          className="a"
-          src="/correo.svg"
-          alt="logogmail"
-          
-          width={40}
-          height={0}
-          priority
-        />
-        </a>
-  <div className="text-xl font-light text-white p-2 md:p-4 ">cmm@alarmascmm.com</div>
 </div>
-
-<div className="flex p-2 ">
-
-<a href='tel:+541133324034' >
-<Image
-          className=""
-          src="/llamada.svg"
-          alt="logotelefono"
-          
-          width={44}
-          height={0}
-          priority
-        />
-        </a>
-
-<div className="text-xl p-2 font-light text-white ">Teléfono: 1133324034</div>
-
-  </div>
-
-<div className="flex p-2 items-center">
-
-<a
-        href="https://www.facebook.com/CMM.ALARMAS"
-        target="_blank"
-        className=""
-      >
-<Image
-          className=""
-          src="/facebook.svg"
-          alt="logofacebook"
-          
-          width={44}
-          height={0}
-          priority
-        />
-        </a>
-
-<div className="text-xl p-2 font-light text-white">Facebook/cmm.alarmas</div>
-
-</div>
- 
-<div className="flex p-2 items-center md:">
-
-<a
-        href="https://www.instagram.com/alarmascmm/"
-        target="_blank"
-        className=""
-      >
-<Image
-          className="flex p-2 items-center"
-          src="/instagram.svg"
-          alt="logofacebook"
-          
-          width={64}
-          height={0}
-          priority
-        />
-        </a>
-
-<div className="text-xl p-2 mt-4 font-light text-white md:mt-1">Instagram.com/alarmascmm </div>
-
-   </div>*/}
-</div>
-
-
 
 <div className="grid grid-cols-1 p-4 place-items-center mt-20">
 

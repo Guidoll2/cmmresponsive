@@ -25,7 +25,7 @@ const MenuDesplegable = () => {
 
       {menuVisible && (
         <div
-          className="absolute bottom-[5px] right-[2px] w-screen border-[2px] border-stone-700  bg-gradient-to-l from-blue-950 to-blue-900 rounded-[10px] shadow-2xl z-[100] transition duration-150 ease-out hover:ease-in md:w-[400px] md:h-[600px] md:top-[0px] md:right-[0px]"
+          className="absolute bottom-[5px] right-[2px] w-screen border-[2px] border-stone-700  bg-gradient-to-l from-blue-950 to-blue-900 rounded-[10px] shadow-2xl z-[100] transition duration-150 ease-out hover:ease-in md:w-[400px] md:h-screen md:top-[0px] md:right-[0px]"
           onClick={() => setMenuVisible(false)}
         >
             <p className='absolute left-5 top-3 text-2xl text-stone-200'>X</p>
