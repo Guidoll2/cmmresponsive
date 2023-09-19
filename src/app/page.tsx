@@ -446,7 +446,7 @@ export default function Home() {
 {/** 
 <h2 className='font-[] font-light md:text-4xl text-2xl text-stone-200 mt-3 text-center'>Un asesor esta listo para atenderlo</h2>
 */}
-<div className='grid grid-cols-3 p-2 gap-8 place-items-center mt-24 md:grid-cols-5 md:grid-cols-3 md:gap-0 md:p-0'>
+<div className='grid grid-cols-3 p-2 gap-8 place-items-center mt-24 md:grid-cols-3 md:gap-0 md:p-0'>
 
 <div id='ICONOWHATSAPPDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0'>
 
