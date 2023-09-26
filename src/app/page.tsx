@@ -704,7 +704,7 @@ Al confiar en CMM para sus proyectos de seguridad electrónica, puede estar segu
 <SectionHeader></SectionHeader>
 </div>
   <h1 className='text-center  mt-[90px] text-xl md:text-3xl md:mt-20 font-[lato]'> San Miguel del Monte - Cañuelas - Lobos</h1>
-  <h2 className='text-center py-3 text-[15px] md:mt-5 font-[lato]'> Copyright 2022. Todos los derechos reservados. <a href='https://wa.me/+15109600432' target='_blank'><span className='text-left decoration-2'>Diseño y Desarrollo Dotty's.</span> </a></h2>
+  <h2 className='text-center py-3 text-[15px] md:mt-5 font-[lato]'> Copyright 2022. Todos los derechos reservados. <a href='https://wa.me/+15109600432' target='_blank'><span className='text-left decoration-2'>Diseño y Desarrollo Dottys.</span> </a></h2>
 
 </footer>
 
