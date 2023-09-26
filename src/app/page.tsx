@@ -18,7 +18,7 @@ import SectionHeader from './gradienteletrasfooter';
 export default function Home() {
    return (
     
-    <main className="block grid overflow-hidden bg-gradient-to-r from-stone-100 to-stone-400 md:grid md:grid-cols-1">
+    <main className="block grid overflow-hidden bg-gradient-to-r from-blue-700 to-blue-950 md:grid md:grid-cols-1">
     
     <Header />
     
@@ -42,8 +42,8 @@ export default function Home() {
 
 
 <Image
-      className="absolute w-screen shadow-xl z-[90] opacity-40 mt-[280px]"
-      src="/indusrty2.jpeg"
+      className="absolute w-screen shadow-xl z-[90] opacity-60 mt-[280px]"
+      src="/CASA.png"
       alt="CMM Logo"
       width={250}
       height={150}
@@ -51,7 +51,7 @@ export default function Home() {
     />
 
 
-<div id='NAVBAR' className="absolute w-screen z-[99] h-[120px] py-2  grid grid-cols-1 border-b-[3px] border-blue-950 shadow-2xl bg-gradient-to-l from-blue-950 to-stone-200 md:h-40 ">
+<div id='NAVBAR' className="absolute w-screen z-[99] h-[120px] py-2  grid grid-cols-1 shadow-2xl bg-white  md:h-40 ">
   
   <div className='grid grid-cols-2 md:w-screen md:absolute md:top-5 '>
   <Image
@@ -65,7 +65,7 @@ export default function Home() {
     
     
     
-    <div className='absolute right-10 top-5 py-2'>
+    <div className='absolute right-10 top-8 py-2'>
   <SectionTitle></SectionTitle>
   </div>
 
@@ -129,7 +129,7 @@ export default function Home() {
     />   
 
 </div>
-<p className='font-[lato] font-bold flex justify-center text-stone-100 py-2 md:text-7xl text-xl'>Cuidamos tu seguridad y la estetica de tu casa.</p>
+<p className='font-[lato] flex justify-center text-stone-100 py-2 md:text-7xl text-l'>Cuidamos tu seguridad y la estética de tu casa.</p>
 
 <div id='COMOFUNCIONA' className=''>
 <ComoFunciona></ComoFunciona>
@@ -149,7 +149,7 @@ export default function Home() {
 
 
 <div className='mt-5 '>
-<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-[lato] font-bold'>Monitoreamos tu equipo las 24 horas</h1>
+<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-[lato] font-bold'>Monitoreo las 24 horas</h1>
 <p className='mt-3 text-xl md:text-2xl text-center font-[lato] text-stone-100'>Ante un evento de tu alarma nuestra central de servicio estará lista para operar.</p>
 </div>
 
@@ -200,10 +200,23 @@ export default function Home() {
 
 </div>
 
-          <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
-          
-          <button
-        className="mt-8 bg-stone-100 rounded-xl mt-5 text-2xl w-full h-[60px] font-[lato] text-blue-950 font-bold">COTIZA TU EQUIPO</button></a>
+<div className="flex justify-center mt-5 bg-gradient-to-r from-stone-400 to-stone-100 w-full rounded-[5px]">
+  
+  <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
+    <h1 className="p-2 text-2xl font-[lato] text-blue-950 font-bold">Tienda virtual</h1>
+    <img
+      src="/shop.svg"
+      alt="shop icon"
+      width={30}
+      height={10}
+      className="h-10"
+    />
+  </a>
+</div>
+
+
+
+
          
 
 </div>
@@ -310,12 +323,20 @@ export default function Home() {
 <p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato]'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
 </div>
 </div>
-   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
-          
-          <button
-        className="bg-stone-100 mt-8 rounded-xl mt-5 text-2xl w-full h-[60px] text-blue-950 font-bold font-[lato]">COTIZA TU EQUIPO
-        </button></a>
-         
+<div className="flex justify-center mt-5 bg-gradient-to-r from-stone-400 to-stone-100 w-full rounded-[5px]">
+  
+  <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
+    <h1 className="p-2 text-2xl font-[lato] text-blue-950 font-bold">Tienda virtual</h1>
+    <img
+      src="/shop.svg"
+      alt="shop icon"
+      width={30}
+      height={10}
+      className="h-10"
+    />
+  </a>
+</div>
+
 
 </div>
 
@@ -444,10 +465,19 @@ export default function Home() {
 </div>
  
 
-  <div className='mt-20'>
-  <a href="https://guidoll.mercadoshops.com.ar/" target="_blank"> 
-          <button className=' bg-stone-100 rounded-xl mt-5 text-2xl  w-full text-blue-950 h-[60px] font-bold font-[lato]'>COTIZA TU EQUIPO</button></a>
-          </div>
+<div className="flex justify-center mt-5 bg-gradient-to-r from-stone-400 to-stone-100 w-full rounded-[5px]">
+  
+  <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
+    <h1 className="p-2 text-2xl font-[lato] text-blue-950 font-bold">Tienda virtual</h1>
+    <img
+      src="/shop.svg"
+      alt="shop icon"
+      width={30}
+      height={10}
+      className="h-10"
+    />
+  </a>
+</div>
 
 </div>
 
@@ -670,7 +700,7 @@ Al confiar en CMM para sus proyectos de seguridad electrónica, puede estar segu
 <SectionHeader></SectionHeader>
 </div>
   <h1 className='text-center  mt-[90px] text-xl md:text-3xl md:mt-20 font-[lato]'> San Miguel del Monte - Cañuelas - Lobos</h1>
-  <h2 className='text-center py-3 text-[15px] md:mt-5 font-[lato]'> Copyright 2022. Todos los derechos reservados. <span className='text-left'>Diseño y Desarrollo Guido Llaurado.</span> </h2>
+  <h2 className='text-center py-3 text-[15px] md:mt-5 font-[lato]'> Copyright 2022. Todos los derechos reservados. <a href='https://wa.me/+15109600432' target='_blank'><span className='text-left decoration-2'>Diseño y Desarrollo Dotty's.</span> </a></h2>
 
 </footer>
 
