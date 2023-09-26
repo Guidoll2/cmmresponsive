@@ -22,17 +22,21 @@ export default function Home() {
     
     <Header />
     
-    <a className='' href='https://wa.me/+5491133324034' target='_blank'> <Image
-      className="ml-5 opacity-90 z-[100] fixed left-0 bottom-5 md:fixed md:w-[80px] md:bottom-10"
+    <a className='' href='https://wa.me/+5491133324034' target='_blank'> 
+    
+    <Image
+      className="fixed ml-5 opacity-90 z-[100] left-0 bottom-5 md:w-[80px] md:bottom-10"
       src="/whatsappv.svg"
       alt="CMM Logo"
       width={40}
       height={0}
       priority
-    /></a>
+    />
+    
+    </a>
 
 <a className='' href='#NAVBAR'> <Image
-      className="ml-5 opacity-80 invisible left-0 bottom-5 md:fixed md:visible md:w-[80px] md:bottom-10 z-[100]"
+      className="mr-5 opacity-80 invisible right-0 bottom-5 md:fixed md:visible md:w-[80px] md:bottom-10 z-[100]"
       src="/flecha.svg"
       alt="CMM Logo"
       width={60}
@@ -42,8 +46,8 @@ export default function Home() {
 
 
 <Image
-      className="absolute w-screen shadow-xl z-[90] opacity-60 mt-[280px]"
-      src="/CASA.png"
+      className="absolute w-screen z-[90] opacity-60 mt-[280px] md:mt-[450px] "
+      src="/1.svg"
       alt="CMM Logo"
       width={250}
       height={150}
@@ -51,7 +55,7 @@ export default function Home() {
     />
 
 
-<div id='NAVBAR' className="absolute w-screen z-[99] h-[120px] py-2  grid grid-cols-1 shadow-2xl bg-white  md:h-40 ">
+<div id='NAVBAR' className="absolute w-screen z-[99] h-[120px] py-2  grid grid-cols-1 shadow-2xl bg-gradient-to-r from-stone-300 to-stone-100  md:h-40 ">
   
   <div className='grid grid-cols-2 md:w-screen md:absolute md:top-5 '>
   <Image
@@ -65,7 +69,7 @@ export default function Home() {
     
     
     
-    <div className='absolute right-10 top-8 py-2'>
+    <div className='absolute right-10 top-8 py-2 md:top-1'>
   <SectionTitle></SectionTitle>
   </div>
 
@@ -76,20 +80,20 @@ export default function Home() {
 </div>
 </div>
 
-<div id='MENUDESPLEGABLE' className='fixed z-[99] right-0 h-[55px] w-[55px] rounded-full right-2 bottom-[22px] md:top-48 md:right-5 md:rounded-[20px] md: md:absolute '>
+<div id='MENUDESPLEGABLE' className='fixed z-[99] right-0 h-[55px] w-[55px] rounded-full right-2 bottom-[22px] md:top-48 md:right-8 md:rounded-[20px] md:absolute md:w-[80px]'>
   <MenuDesplegable></MenuDesplegable>
   </div>
   
 {/**FIN DEL DIV DEL NAVBAR */}
 
-<div id='' className='flex grid grid-rows-1 mt-[120px] place-items-center'>
+<div id='' className='flex grid grid-rows-1 mt-[120px] place-items-center md:mt-[140px]'>
 <SectionTitle2></SectionTitle2>
 </div>
 
-<div id='CONTENEDORALARMA' className='border-t-[3px] border-blue-700 border--[3px] border-blue-700 grid grid-rows-1 bg-gradient-to-l from-blue-950 to-blue-900 p-4 mt-20 shadow-2xl md:mt-60'>
+<div id='CONTENEDORALARMA' className='border-t-[3px] border-blue-700 border--[3px] border-blue-700 grid grid-rows-1 bg-gradient-to-l from-blue-950 to-blue-900 p-4 mt-20 shadow-2xl md:mt-[1000px]'>
    
 <h1 id='' className='font-[lato] font-bold  text-center text-stone-100 py-2 md:text-7xl text-5xl '>Alarmas monitoreadas</h1>
-<h2 className='py-4 font-[lato]  text-stone-100 text-center md:text-4xl text-2xl'>Hogar seguro, diseño sin cables</h2>
+<h2 className='py-4 font-[lato]  text-stone-100 text-center md:text-4xl text-2xl font-light'>Hogar seguro, diseño sin cables</h2>
 
 <div className='flex grid grid-cols-2 gap-1 mt-4 md:w-full md:grid-cols-4 md:gap-4 md:ml-10 opacity-80'>
 <Image
@@ -129,7 +133,7 @@ export default function Home() {
     />   
 
 </div>
-<p className='font-[lato] flex justify-center text-stone-100 py-2 md:text-7xl text-l'>Cuidamos tu seguridad y la estética de tu casa.</p>
+<p className='font-[lato] flex justify-center text-stone-100 py-2 md:text-4xl font-light md:p-4 text-l'>Cuidamos tu seguridad y la estética de tu casa.</p>
 
 <div id='COMOFUNCIONA' className=''>
 <ComoFunciona></ComoFunciona>
@@ -150,7 +154,7 @@ export default function Home() {
 
 <div className='mt-5 '>
 <h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-[lato] font-bold'>Monitoreo las 24 horas</h1>
-<p className='mt-3 text-xl md:text-2xl text-center font-[lato] text-stone-100'>Ante un evento de tu alarma nuestra central de servicio estará lista para operar.</p>
+<p className='mt-3 text-xl md:text-2xl text-center font-[lato] text-stone-100 font-light'>Ante un evento de tu alarma nuestra central de servicio estará lista para operar.</p>
 </div>
 
  
@@ -168,7 +172,7 @@ export default function Home() {
 
 <div className='grid grid-rows-1 grid-cols-1 '>
 <h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-[lato] font-bold'>Notificaciones al instante </h1>
-<p className='text-stone-200 text-xl md:text-2xl mt-3 font-[lato] text-center'>En el momento que se genera un evento una notificación llega a tu celular. </p>
+<p className='text-stone-200 text-xl md:text-2xl mt-3 font-[lato] text-center font-light'>En el momento que se genera un evento una notificación llega a tu celular. </p>
 </div>
 
 
@@ -183,7 +187,7 @@ export default function Home() {
 
 <div className='grid grid-rows-1 grid-cols-1 '>
 <h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-[lato] font-bold'>Asistencia telefónica </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center font-[lato] mt-3'>Simultáneamente nuestros operadores se ponen en contacto para brindarte asistencia de manera profesional.</p>
+<p className='text-stone-200 text-xl md:text-2xl text-center font-[lato] mt-3 font-light'>Simultáneamente nuestros operadores se ponen en contacto para brindarte asistencia de manera profesional.</p>
 </div>
 
 <Image
@@ -196,7 +200,7 @@ export default function Home() {
     />   
 
 <h1 className='text-2xl text-stone-100 mt-5 md:text-3xl  font-[lato] font-bold'>Llamada al 911</h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center font-[lato] mt-3'>De ser necesario se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
+<p className='text-stone-200 text-xl md:text-2xl text-center font-[lato] mt-3 font-light'>De ser necesario se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
 
 </div>
 
@@ -225,7 +229,7 @@ export default function Home() {
 
 <h1 className='font-[lato] font-bold text-center md:text-7xl text-5xl text-stone-200 mt-6 font-[lato]'>Cámaras de seguridad </h1>
 
-<h2 className='font-[] text-center md:text-4xl text-2xl text-stone-200 mt-4 font-[lato]'>Tu propiedad en tu celular </h2>
+<h2 className='font-[] text-center md:text-4xl text-2xl text-stone-200 mt-4 font-[lato] font-light'>Tu propiedad en tu celular </h2>
 
 
 <div className='flex grid grid-cols-2 gap-4 md:grid-cols-4 opacity-80 h-96'>
@@ -286,7 +290,7 @@ export default function Home() {
 
 <div className='mt-5 '>
 <h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold font-[lato]'>Visualización en directo las 24 horas </h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font-[lato]'>Estés donde estés vas a poder ver tu propiedad.</p>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font-[lato] font-light'>Estés donde estés vas a poder ver tu propiedad.</p>
 
 </div>
 
@@ -305,7 +309,7 @@ export default function Home() {
 
 <div className='grid grid-rows-1 grid-cols-1'>
 <h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Notificaciones en tiempo real </h1>
-<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center font-[lato]'>Recibís notificaciones de tu sistema de video vigilancia de manera instantánea (Cortes de luz, internet, detección de movimiento entre otros).</p>
+<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center font-[lato] font-light'>Recibís notificaciones de tu sistema de video vigilancia de manera instantánea (Cortes de luz, internet, detección de movimiento entre otros).</p>
 </div>
 
 
@@ -320,7 +324,7 @@ export default function Home() {
 
 <div className='grid grid-rows-1 grid-cols-1'>
 <h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Grabación continua </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato]'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato] font-light'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
 </div>
 </div>
 <div className="flex justify-center mt-5 bg-gradient-to-r from-stone-400 to-stone-100 w-full rounded-[5px]">
@@ -344,7 +348,7 @@ export default function Home() {
 
 <div id='CONTENEDORINDUSTRIAS' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 to-blue-900 mt-2 p-4'>
 <h1 className='font-[lato] font-bold md:text-7xl text-5xl text-stone-200 mt-5 text-center font-[lato]'>Industrias y comercios</h1>
-<h2 className='font-[] md:text-4xl text-2xl text-stone-200 mt-4 text-center font-[lato]'>Controla y optimiza tus negocios</h2>
+<h2 className='font-[] md:text-4xl text-2xl text-stone-200 mt-4 text-center font-[lato] font-light'>Controla y optimiza tus negocios</h2>
 
 
 
@@ -409,7 +413,7 @@ export default function Home() {
 
 <div className=''>
 <h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Control de acceso</h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font-[lato]'>Gestiona de manera electrónica el acceso a los distintos sectores de tu industria/comercio</p>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font-[lato] font-light'>Gestiona de manera electrónica el acceso a los distintos sectores de tu industria/comercio</p>
 </div>
 
 <div className='grid grid-cols-1 mt-5'>
@@ -426,7 +430,7 @@ export default function Home() {
 
 <div className='grid grid-cols-1'>
 <h1 className='text-xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Mejora de procesos productivos </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato]'>Recibi alertas del estado de tus equipos de producción instantáneamente</p>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato] font-light'>Recibi alertas del estado de tus equipos de producción instantáneamente</p>
 </div>
 
 
@@ -442,7 +446,7 @@ export default function Home() {
 </div>
 <div className='grid grid-rows-1 grid-cols-1 md:mt-20'>
 <h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Seguimiento de empleados</h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato]'>Generá tareas para tus empleados que queden registradas en tu app de control</p>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato] font-light'>Generá tareas para tus empleados que queden registradas en tu app de control</p>
 </div>
 
 <Image
@@ -457,7 +461,7 @@ export default function Home() {
 
 <div className='mt-5 '>
 <h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold font-[lato]'>CCTV Motorizado </h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font-[lato]'>Domos con IA, motorizados y 360° de ángulo de cobertura.</p>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font-[lato] font-light'>Domos con IA, motorizados y 360° de ángulo de cobertura.</p>
 
 </div>
 
@@ -672,7 +676,7 @@ export default function Home() {
 <h1 className='font-[lato] font-bold text-4xl text-stone-100'>¿Quienes somos? </h1>
 
 <h2 className='font-[lato] font-bold text-xl text-stone-100 py-4 '>Mas de 12 años cuidandote</h2>
-<p className='text-stone-200 text-xl font-light font-[lato]'> 
+<p className='text-stone-200 text-xl font-light font-[lato] '> 
 
 
 CMM se destaca como empresa líder en seguridad electrónica. Con más de una década de experiencia, lo que comenzó como un modesto servicio de seguridad para casas de fin de semana en San Miguel del Monte ha evolucionado y se ha adaptado al crecimiento y desarrollo de la región. Hoy, nuestra presencia se extiende atendiendo a una nueva gama de clientes que incluye residencias permanentes, comercios e industrias.
