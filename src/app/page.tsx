@@ -208,7 +208,7 @@ export default function Home() {
   
   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
     <h1 className="p-2 text-2xl font-[lato] text-blue-950 font-bold">Tienda virtual</h1>
-    <img
+    <Image
       src="/shop.svg"
       alt="shop icon"
       width={30}
@@ -331,7 +331,7 @@ export default function Home() {
   
   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
     <h1 className="p-2 text-2xl font-[lato] text-blue-950 font-bold">Tienda virtual</h1>
-    <img
+    <Image
       src="/shop.svg"
       alt="shop icon"
       width={30}
@@ -473,7 +473,7 @@ export default function Home() {
   
   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
     <h1 className="p-2 text-2xl font-[lato] text-blue-950 font-bold">Tienda virtual</h1>
-    <img
+    <Image
       src="/shop.svg"
       alt="shop icon"
       width={30}
