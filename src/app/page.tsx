@@ -90,45 +90,45 @@ export default function Home() {
 <SectionTitle2></SectionTitle2>
 </div>
 
-<div id='CONTENEDORALARMA' className='border-t-[3px] border-blue-700 border--[3px] border-blue-700 grid grid-rows-1 bg-gradient-to-l from-blue-950 to-blue-900 p-4 mt-20 shadow-2xl md:mt-[1000px]'>
+<div id='CONTENEDORALARMA' className='border-t-[3px] border-blue-700 border--[3px] border-blue-700 bg-gradient-to-l from-blue-950 to-blue-900 p-8 mt-20 shadow-2xl md:mt-[1000px]'>
    
 <h1 id='' className='font-[lato] font-bold  text-center text-stone-100 py-2 md:text-7xl text-5xl '>Alarmas monitoreadas</h1>
 <h2 className='py-4 font-[lato]  text-stone-100 text-center md:text-4xl text-2xl font-light'>Hogar seguro, diseño sin cables</h2>
 
-<div className='flex grid grid-cols-2 gap-1 mt-4 md:w-full md:grid-cols-4 md:gap-4 md:ml-10 opacity-80'>
+<div className='flex grid grid-cols-2 md:grid-cols-1 gap-4 mt-4 md:w-full md:grid-cols-4 max-w-7xl opacity-70'>
 <Image
-      className="rounded-xl shadow-xl"
+      className="rounded-xl shadow-xl w-full h-full"
       src="/sensorpuerta.jpg"
       alt="CMM Logo"
-      width={250}
-      height={150}
+      width={1000}
+      height={100}
       priority
     />
 
 <Image
-      className="rounded-xl shadow-xl"
+      className="rounded-xl shadow-xl w-full h-full"
       src="/centralv.jpg"
       alt="CMM Logo"
-      width={250}
-      height={150}
+      width={1000}
+      height={100}
       priority
     />
 
 <Image
-      className="rounded-xl shadow-xl"
+      className="rounded-xl shadow-xl w-full h-full"
       src="/smarts.jpg"
       alt="CMM Logo"
-      width={250}
-      height={150}
+      width={1000}
+      height={100}
       priority
     />
 
 <Image
-      className="rounded-xl shadow-xl h-full"
+      className="rounded-xl shadow-xl w-full h-full"
       src="/control.jpg"
-      alt="CMM Logo"
-      width={250}
-      height={150}
+      alt="control alarma"
+      width={1000}
+      height={100}
       priority
     />   
 
@@ -237,7 +237,7 @@ export default function Home() {
       className="rounded-xl shadow-xl w-full h-full"
       src="/cctvadobe.jpeg"
       alt="CMM Logo"
-      width={500}
+      width={1000}
       height={100}
       priority
     />
@@ -256,8 +256,8 @@ export default function Home() {
       className="rounded-xl shadow-xl w-full h-full"
       src="/CCTV1.jpg"
       alt="CMM Logo"
-      width={400}
-      height={200}
+      width={1000}
+      height={100}
       priority
     />
 
@@ -267,8 +267,8 @@ export default function Home() {
       className="rounded-xl shadow-xl w-full h-full"
       src="/cctvphone.jpg"
       alt="CMM Logo"
-      width={400}
-      height={200}
+      width={1000}
+      height={100}
       priority
     />
 
@@ -357,7 +357,7 @@ export default function Home() {
       className="rounded-xl shadow-xl w-full h-full"
       src="/indusrty3.jpeg"
       alt="CMM Logo"
-      width={500}
+      width={1000}
       height={100}
       priority
     />
@@ -367,7 +367,7 @@ export default function Home() {
       src="/hands.jpg"
       alt="control acceso industria"
       width={1000}
-      height={200}
+      height={100}
       priority
     />
 
@@ -377,7 +377,7 @@ export default function Home() {
       src="/indusrty1.jpeg"
       alt="CMM Logo"
       width={1000}
-      height={1000}
+      height={100}
       priority
     />
 
@@ -387,8 +387,8 @@ export default function Home() {
       className="rounded-xl shadow-xl w-full h-full"
       src="/indusrty2.jpeg"
       alt="CMM Logo"
-      width={400}
-      height={200}
+      width={1000}
+      height={100}
       priority
     />
 
