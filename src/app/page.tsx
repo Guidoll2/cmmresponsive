@@ -47,8 +47,8 @@ export default function Home() {
 
 <Image
       className="absolute w-screen z-[90] opacity-60 mt-[280px] md:mt-[450px] "
-      src="/1.svg"
-      alt="CMM Logo"
+      src="/casalq.jpg"
+      alt="fondo casa"
       width={250}
       height={150}
       priority
@@ -69,7 +69,7 @@ export default function Home() {
     
     
     
-    <div className='absolute right-10 top-8 py-2 md:top-1'>
+    <div className='absolute right-10 top-8 md:top-1'>
   <SectionTitle></SectionTitle>
   </div>
 
@@ -92,8 +92,8 @@ export default function Home() {
 
 <div id='CONTENEDORALARMA' className='border-t-[3px] border-blue-700 border--[3px] border-blue-700 bg-gradient-to-l from-blue-950 to-blue-900 p-8 mt-20 shadow-2xl md:mt-[1000px]'>
    
-<h1 id='' className='font-[lato] font-bold  text-center text-stone-100 py-2 md:text-7xl text-5xl '>Alarmas monitoreadas</h1>
-<h2 className='py-4 font-[lato]  text-stone-100 text-center md:text-4xl text-2xl font-light'>Hogar seguro, diseño sin cables</h2>
+<h1 id='' className='font font-bold  text-center text-stone-100 py-2 md:text-7xl text-5xl '>Alarmas monitoreadas</h1>
+<h2 className='py-4 font  text-stone-100 text-center md:text-4xl text-2xl font-light'>Hogar seguro, diseño sin cables</h2>
 
 <div className='flex grid grid-cols-2 md:grid-cols-1 gap-4 mt-4 md:w-full md:grid-cols-4 max-w-7xl opacity-70'>
 <Image
@@ -133,7 +133,7 @@ export default function Home() {
     />   
 
 </div>
-<p className='font-[lato] flex justify-center text-stone-100 py-2 md:text-4xl font-light md:p-4 text-l'>Cuidamos tu seguridad y la estética de tu casa.</p>
+<p className='font flex justify-center text-stone-100 py-2 md:text-4xl font-light md:p-4 text-l'>Cuidamos tu seguridad y la estética de tu casa.</p>
 
 <div id='COMOFUNCIONA' className=''>
 <ComoFunciona></ComoFunciona>
@@ -153,8 +153,8 @@ export default function Home() {
 
 
 <div className='mt-5 '>
-<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-[lato] font-bold'>Monitoreo las 24 horas</h1>
-<p className='mt-3 text-xl md:text-2xl text-center font-[lato] text-stone-100 font-light'>Ante un evento de tu alarma nuestra central de servicio estará lista para operar.</p>
+<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font font-bold'>Monitoreo las 24 horas</h1>
+<p className='mt-3 text-xl md:text-2xl text-center font text-stone-100 font-light'>Ante un evento de tu alarma nuestra central de servicio estará lista para operar.</p>
 </div>
 
  
@@ -171,8 +171,8 @@ export default function Home() {
 </div>
 
 <div className='grid grid-rows-1 grid-cols-1 '>
-<h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-[lato] font-bold'>Notificaciones al instante </h1>
-<p className='text-stone-200 text-xl md:text-2xl mt-3 font-[lato] text-center font-light'>En el momento que se genera un evento una notificación llega a tu celular. </p>
+<h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font font-bold'>Notificaciones al instante </h1>
+<p className='text-stone-200 text-xl md:text-2xl mt-3 font text-center font-light'>En el momento que se genera un evento una notificación llega a tu celular. </p>
 </div>
 
 
@@ -186,8 +186,8 @@ export default function Home() {
     />   
 
 <div className='grid grid-rows-1 grid-cols-1 '>
-<h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font-[lato] font-bold'>Asistencia telefónica </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center font-[lato] mt-3 font-light'>Simultáneamente nuestros operadores se ponen en contacto para brindarte asistencia de manera profesional.</p>
+<h1 className='text-2xl text-center mt-5 text-stone-100 md:text-3xl font font-bold'>Asistencia telefónica </h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center font mt-3 font-light'>Simultáneamente nuestros operadores se ponen en contacto para brindarte asistencia de manera profesional.</p>
 </div>
 
 <Image
@@ -199,15 +199,15 @@ export default function Home() {
       priority
     />   
 
-<h1 className='text-2xl text-stone-100 mt-5 md:text-3xl  font-[lato] font-bold'>Llamada al 911</h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center font-[lato] mt-3 font-light'>De ser necesario se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
+<h1 className='text-2xl text-stone-100 mt-5 md:text-3xl font font-bold'>Llamada al 911</h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center font mt-3 font-light'>De ser necesario se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
 
 </div>
 
 <div className="flex justify-center mt-5 bg-gradient-to-r from-stone-400 to-stone-100 w-full rounded-[5px]">
   
   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
-    <h1 className="p-2 text-2xl font-[lato] text-blue-950 font-bold">Tienda virtual</h1>
+    <h1 className="p-2 text-2xl font text-blue-950 font-bold">Tienda virtual</h1>
     <Image
       src="/shop.svg"
       alt="shop icon"
@@ -227,9 +227,9 @@ export default function Home() {
 
 <div id='CONTENEDORCCTV' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 mt-2 p-4'>
 
-<h1 className='font-[lato] font-bold text-center md:text-7xl text-5xl text-stone-200 mt-6 font-[lato]'>Cámaras de seguridad </h1>
+<h1 className='font font-bold text-center md:text-7xl text-5xl text-stone-200 mt-6 font'>Cámaras de seguridad </h1>
 
-<h2 className='font-[] text-center md:text-4xl text-2xl text-stone-200 mt-4 font-[lato] font-light'>Tu propiedad en tu celular </h2>
+<h2 className='font-[] text-center md:text-4xl text-2xl text-stone-200 mt-4 font font-light'>Tu propiedad en tu celular </h2>
 
 
 <div className='flex grid grid-cols-2 gap-4 md:grid-cols-4 opacity-80 h-96'>
@@ -289,8 +289,8 @@ export default function Home() {
 
 
 <div className='mt-5 '>
-<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold font-[lato]'>Visualización en directo las 24 horas </h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font-[lato] font-light'>Estés donde estés vas a poder ver tu propiedad.</p>
+<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold font'>Visualización en directo las 24 horas </h1>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font font-light'>Estés donde estés vas a poder ver tu propiedad.</p>
 
 </div>
 
@@ -308,8 +308,8 @@ export default function Home() {
 </div>
 
 <div className='grid grid-rows-1 grid-cols-1'>
-<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Notificaciones en tiempo real </h1>
-<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center font-[lato] font-light'>Recibís notificaciones de tu sistema de video vigilancia de manera instantánea (Cortes de luz, internet, detección de movimiento entre otros).</p>
+<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font'>Notificaciones en tiempo real </h1>
+<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center font font-light'>Recibís notificaciones de tu sistema de video vigilancia de manera instantánea (Cortes de luz, internet, detección de movimiento entre otros).</p>
 </div>
 
 
@@ -323,14 +323,14 @@ export default function Home() {
     />   
 
 <div className='grid grid-rows-1 grid-cols-1'>
-<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Grabación continua </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato] font-light'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
+<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font'>Grabación continua </h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font font-light'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
 </div>
 </div>
 <div className="flex justify-center mt-5 bg-gradient-to-r from-stone-400 to-stone-100 w-full rounded-[5px]">
   
   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
-    <h1 className="p-2 text-2xl font-[lato] text-blue-950 font-bold">Tienda virtual</h1>
+    <h1 className="p-2 text-2xl font text-blue-950 font-bold">Tienda virtual</h1>
     <Image
       src="/shop.svg"
       alt="shop icon"
@@ -347,8 +347,8 @@ export default function Home() {
 
 
 <div id='CONTENEDORINDUSTRIAS' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 to-blue-900 mt-2 p-4'>
-<h1 className='font-[lato] font-bold md:text-7xl text-5xl text-stone-200 mt-5 text-center font-[lato]'>Industrias y comercios</h1>
-<h2 className='font-[] md:text-4xl text-2xl text-stone-200 mt-4 text-center font-[lato] font-light'>Controla y optimiza tus negocios</h2>
+<h1 className='font font-bold md:text-7xl text-5xl text-stone-200 mt-5 text-center font'>Industrias y comercios</h1>
+<h2 className='font-[] md:text-4xl text-2xl text-stone-200 mt-4 text-center font font-light'>Controla y optimiza tus negocios</h2>
 
 
 
@@ -412,8 +412,8 @@ export default function Home() {
 
 
 <div className=''>
-<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Control de acceso</h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font-[lato] font-light'>Gestiona de manera electrónica el acceso a los distintos sectores de tu industria/comercio</p>
+<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font'>Control de acceso</h1>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font font-light'>Gestiona de manera electrónica el acceso a los distintos sectores de tu industria/comercio</p>
 </div>
 
 <div className='grid grid-cols-1 mt-5'>
@@ -429,8 +429,8 @@ export default function Home() {
 </div>
 
 <div className='grid grid-cols-1'>
-<h1 className='text-xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Mejora de procesos productivos </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato] font-light'>Recibi alertas del estado de tus equipos de producción instantáneamente</p>
+<h1 className='text-xl text-center text-stone-100 md:text-3xl font-bold font'>Mejora de procesos productivos </h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font font-light'>Recibi alertas del estado de tus equipos de producción instantáneamente</p>
 </div>
 
 
@@ -445,8 +445,8 @@ export default function Home() {
     />   
 </div>
 <div className='grid grid-rows-1 grid-cols-1 md:mt-20'>
-<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font-[lato]'>Seguimiento de empleados</h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font-[lato] font-light'>Generá tareas para tus empleados que queden registradas en tu app de control</p>
+<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font'>Seguimiento de empleados</h1>
+<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font font-light'>Generá tareas para tus empleados que queden registradas en tu app de control</p>
 </div>
 
 <Image
@@ -460,8 +460,8 @@ export default function Home() {
 
 
 <div className='mt-5 '>
-<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold font-[lato]'>CCTV Motorizado </h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font-[lato] font-light'>Domos con IA, motorizados y 360° de ángulo de cobertura.</p>
+<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold font'>CCTV Motorizado </h1>
+<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font font-light'>Domos con IA, motorizados y 360° de ángulo de cobertura.</p>
 
 </div>
 
@@ -472,7 +472,7 @@ export default function Home() {
 <div className="flex justify-center mt-5 bg-gradient-to-r from-stone-400 to-stone-100 w-full rounded-[5px]">
   
   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
-    <h1 className="p-2 text-2xl font-[lato] text-blue-950 font-bold">Tienda virtual</h1>
+    <h1 className="p-2 text-2xl font text-blue-950 font-bold">Tienda virtual</h1>
     <Image
       src="/shop.svg"
       alt="shop icon"
@@ -488,7 +488,7 @@ export default function Home() {
 <div id='CONTENEDORCONTACTO' className='grid grid-rows-1 bg-gradient-to-t from-blue-950 to-blue-900 mt-2 p-4 md:'>
 
   
-<h1 className='font-[lato] font-light  md:text-7xl text-5xl text-stone-200 mt-5 text-center font-[lato]'>Contáctenos</h1>
+<h1 className='font font-light  md:text-7xl text-5xl text-stone-200 mt-5 text-center font'>Contáctenos</h1>
 
 {/** 
 <h2 className='font-[] font-light md:text-4xl text-2xl text-stone-200 mt-3 text-center'>Un asesor esta listo para atenderlo</h2>
@@ -512,7 +512,7 @@ export default function Home() {
  </div>      
 <div className=''>
 <a href='https://wa.me/+5491133324034' target='_blank'  >
-    <h2 className='text-xl font-light text-stone-100 md:p-4 md:text-3xl font-[lato]'>Whatsapp</h2>
+    <h2 className='text-xl font-light text-stone-100 md:p-4 md:text-3xl font'>Whatsapp</h2>
    
 
   </a> 
@@ -539,7 +539,7 @@ export default function Home() {
 </div>      
 <div className=''>
 <a href='mailto:cmm@alarmascmm.com'>
-  <h2 className='text-xl font-light text-stone-100 px-4 md:p-4 md:text-3xl font-[lato] '>Mail</h2>
+  <h2 className='text-xl font-light text-stone-100 px-4 md:p-4 md:text-3xl font '>Mail</h2>
  
 
 </a> 
@@ -566,7 +566,7 @@ export default function Home() {
  </div>      
 <div className=''>
 <a href='tel:+541133324034' >
-    <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl font-[lato]'>Teléfono</h2>
+    <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl font'>Teléfono</h2>
    
 
   </a> 
@@ -608,7 +608,7 @@ export default function Home() {
         className=""
       >
 
-  <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl font-[lato]'>Facebook</h2>
+  <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl font'>Facebook</h2>
  
 
 </a> 
@@ -666,17 +666,17 @@ export default function Home() {
         />
         
 
-<div className="text-2xl p-4 text-white text-center font-light font-[lato]">Horario de atención: Lunes a Viernes de 9:00 a 17:00</div>
+<div className="text-2xl p-4 text-white text-center font-light font">Horario de atención: Lunes a Viernes de 9:00 a 17:00</div>
   </div>
 
 </div>
 
 <div id='CONTENEDORIDENTIDAD' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900  mt-2 p-4'>
 
-<h1 className='font-[lato] font-bold text-4xl text-stone-100'>¿Quienes somos? </h1>
+<h1 className='font font-bold text-4xl text-stone-100'>¿Quienes somos? </h1>
 
-<h2 className='font-[lato] font-bold text-xl text-stone-100 py-4 '>Mas de 12 años cuidandote</h2>
-<p className='text-stone-200 text-xl font-light font-[lato] '> 
+<h2 className='font font-bold text-xl text-stone-100 py-4 '>Mas de 12 años cuidandote</h2>
+<p className='text-stone-200 text-xl font-light font '> 
 
 
 CMM se destaca como empresa líder en seguridad electrónica. Con más de una década de experiencia, lo que comenzó como un modesto servicio de seguridad para casas de fin de semana en San Miguel del Monte ha evolucionado y se ha adaptado al crecimiento y desarrollo de la región. Hoy, nuestra presencia se extiende atendiendo a una nueva gama de clientes que incluye residencias permanentes, comercios e industrias.
@@ -703,8 +703,8 @@ Al confiar en CMM para sus proyectos de seguridad electrónica, puede estar segu
 <div className=' left-0 absolute'>
 <SectionHeader></SectionHeader>
 </div>
-  <h1 className='text-center  mt-[90px] text-xl md:text-3xl md:mt-20 font-[lato]'> San Miguel del Monte - Cañuelas - Lobos</h1>
-  <h2 className='text-center py-3 text-[15px] md:mt-5 font-[lato]'> Copyright 2022. Todos los derechos reservados. <a href='https://wa.me/+15109600432' target='_blank'><span className='text-left decoration-2'>Diseño y Desarrollo Dottys.</span> </a></h2>
+  <h1 className='text-center  mt-[90px] text-xl md:text-3xl md:mt-20 font'> San Miguel del Monte - Cañuelas - Lobos</h1>
+  <h2 className='text-center py-3 text-[15px] md:mt-5 font'> Copyright 2022. Todos los derechos reservados. <a href='https://wa.me/+15109600432' target='_blank'><span className='text-left decoration-2'>Diseño y Desarrollo Dottys.</span> </a></h2>
 
 </footer>
 
