@@ -3,7 +3,7 @@
 const Cctv = () => {
 
     return (
-<div id='CONTENEDORCCTV' className='grid grid-rows-2 bg-gradient-to-l from-blue-950 to-blue-900 mt-2 p-4'>
+<div id='CONTENEDORCCTV' className='flex flex-col justify-center items-center bg-gradient-to-l from-blue-950 to-blue-900 mt-2 p-4'>
 
 <h1 className='font font-bold text-center md:text-7xl text-5xl text-stone-200 mt-6 font'>Cámaras de seguridad </h1>
 
@@ -105,17 +105,19 @@ const Cctv = () => {
 <p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font font-light'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
 </div>
 </div>
-<div className="flex justify-center mt-5 bg-gradient-to-r from-stone-400 to-stone-100 w-full rounded-[5px]">
+<div className="flex flex-col mt-5 bg-gradient-to-r from-stone-400 to-slate-200 w-fit rounded-full p-2 mb-4">
   
   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
-    <h1 className="p-2 text-2xl font text-blue-950 font-bold">Tienda virtual</h1>
+    <p className="text-l font text-blue-950 font-bold">Tienda virtual</p>
+   
     <img
       src="/shop.svg"
       alt="shop icon"
       width={30}
       height={10}
-      className="h-10"
+      className="h-10 p-0.5"
     />
+
   </a>
 </div>
 

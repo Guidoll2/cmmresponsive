@@ -42,26 +42,26 @@ const [menuOpen, setMenuOpen] = useState (false)
       
 <div className={
     menuOpen
-    ? 'absolute left-0 top-0 w-screen h-screen sm:hidden bg-gray-200 p-10 ease-in duration-500 z-[100]'
+    ? 'absolute left-0 top-0 w-screen h-screen sm:hidden bg-gray-200 p-2 ease-in duration-500 z-[100]'
     : 'absolute left-[-100%] top-0 p-10 ease-in duration-500 '
 
 }>
 <div className='block'>
     <div onClick={handleNav} className='cursor-pointer flex justify-end'>
-        <h1 className='uppercase text-4xl text-blue-950'>X</h1>
+        <h1 className='uppercase text-xl text-blue-950'>X</h1>
     </div>
 
 
 {/*ACA ESTA EL MENU DESPLEGABLE PARA PANTALLAS DE CELULAR NO TOCAAAAAAS*/}
     
-    <div id='MENUCELU' className='mt-10 flex justify-center'>
+    <div id='MENUCELU' className='flex justify-center'>
 
 <ul className="flex grid grid-cols-1 list-none text-center">
 
           <li className='w-full  p-2'><a href="#CONTENEDORALARMA" className="text-gray-800 p-2 text-2xl">Alarmas Monitoreadas</a></li>
           <li className='w-full  p-2'><a href="#CONTENEDORCCTV"  className="text-gray-800 p-2 text-2xl">Cámaras de Seguridad</a></li>
           <li className='w-full  p-2'><a href="#CONTENEDORINDUSTRIAS" className="text-gray-800 p-2 text-2xl">Industrias</a></li>
-          <li className='w-full  p-2'><a href="https://guidoll.mercadoshops.com.ar/" target='_blank' className="text-gray-800 p-2 text-2xl">Tienda Virtual </a></li>
+          <li className='w-full  p-2'><a href="tienda" target='_blank' className="text-gray-800 p-2 text-2xl">Tienda Virtual </a></li>
           <li className='w-full  p-2'><a href="#CONTENEDORCONTACTO"  className="text-gray-800 p-2 text-2xl">Contacto </a></li>
           <li className='w-full  p-2'><a href="portalclientes" target='_blank' className="text-gray-800 p-2 text-2xl bg-blue-400 rounded-full">Acceso clientes </a></li>
          
@@ -84,7 +84,7 @@ const [menuOpen, setMenuOpen] = useState (false)
 <li className='p-2'><a href="#CONTENEDORALARMA" className="text-gray-800 text-l font-bold">Alarmas Monitoreadas</a></li>
 <li className='p-2'><a href="#CONTENEDORCCTV" className="text-gray-800 text-l font-bold">CCTV</a></li>
 <li className='p-2'><a href="#CONTENEDORINDUSTRIAS" className="text-gray-800 text-l font-bold">Industrias</a></li>
-<li className='p-2'><a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="text-gray-800 text-l font-bold">Tienda Virtual </a></li>
+<li className='p-2'><a href="tienda" target="_blank" className="text-gray-800 text-l font-bold">Tienda Virtual </a></li>
 <li className='p-2'><a href="#CONTENEDORCONTACTO" className="text-gray-800 text-l font-bold">Contacto </a></li>
 <li className='p-2 bg-blue-400 rounded-[50px] h-10  hover:bg-blue-300 '><a href="portalclientes" target='_blank' className="text-gray-800 text-l font-bold">Acceso clientes </a></li>
 

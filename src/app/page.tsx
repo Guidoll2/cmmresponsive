@@ -1,9 +1,6 @@
 'use client'
 import Header from './header';
 import Image from 'next/image'
-import SectionTitle from '../app/gradienteletras'
-import SectionTitle2 from '../app/gradientebajo'
-import SectionHeader from './gradienteletrasfooter';
 import Navbar from './Navbar';
 import Alarmas from './alarma';
 import Cctv from './cctv';
@@ -46,17 +43,11 @@ export default function Home() {
     /></a>
 
 
-<div id='NAVBAR' className='absolute w-screen z-[100]'><Navbar></Navbar></div>
+<div id='NAVBAR' className='z-[100]'><Navbar></Navbar></div>
 
-<div>
+<div className='flex mt-20'>
   <Titulo></Titulo>
 </div>
-{/**
-<div id='TITULOCONGRADIENTE' className='flex grid grid-rows-1 mt-[50px] place-items-center md:mt-[140px]'>
-<SectionTitle2></SectionTitle2>
-</div>
- */}
-
 
 <div>
   <Alarmas></Alarmas>

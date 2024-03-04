@@ -6,12 +6,12 @@ const Alarmas = () => {
 
     return (
 
-        <div id='CONTENEDORALARMA' className='border-t-[3px] border-blue-700 border--[3px] border-blue-700 bg-gradient-to-l from-blue-950 to-blue-900 p-8 mt-20 shadow-2xl md:mt-[1000px]'>
+<div id='CONTENEDORALARMA' className='flex flex-col justify-center items-center bg-gradient-to-l from-blue-950 to-blue-900 border-t-[1px] shadow-2xl md:mt-10'>
    
-<h1 id='' className='font font-bold  text-center text-slate-200/80 py-2 md:text-7xl text-5xl '>Alarmas monitoreadas</h1>
-<h2 className='py-4 font  text-slate-200 text-center md:text-4xl text-2xl font-light'>Hogar seguro, diseño sin cables</h2>
+<h1 id='' className='font font-bold text-center text-slate-200 py-2 md:text-7xl text-5xl '>Alarmas monitoreadas</h1>
+<h2 className='py-4 font text-slate-200/80 text-center md:text-4xl text-l font-light'>Hogar seguro, diseño sin cables</h2>
 
-<div className='flex grid grid-cols-2 md:grid-cols-1 gap-4 mt-4 md:w-full md:grid-cols-4 max-w-7xl opacity-70'>
+<div className='flex grid grid-cols-2 md:grid-cols-1 gap-2 p-2 mt-4 md:w-full md:grid-cols-4 max-w-7xl opacity-70'>
 
 <img
       className="rounded-xl shadow-xl w-full h-full"
@@ -50,18 +50,14 @@ const Alarmas = () => {
     />   
 
 </div>
-<p className='font flex justify-center text-slate-200 py-2 md:text-4xl font-light md:p-4 text-l'>Cuidamos tu seguridad y la estética de tu casa.</p>
+
 
 <div className="flex grid grid-cols-1 text-center p-5 md:mt-20">
-  <h1 className="text-4xl md:text-7xl">Nuestro servicio:</h1>
-  <h1 className="text-xl p-4 md:text-3xl">¿Como funciona?</h1>
+  <h1 className="text-4xl md:text-7xl text-slate-200">Nuestro servicio:</h1>
+  <h1 className="text-xl p-4 md:text-3xl text-slate-200">¿Como funciona?</h1>
 </div>
-{/**
-<div id='COMOFUNCIONA' className=''>
-<ComoFunciona></ComoFunciona>
-</div> */}
 
-<div className='p-4 grid grid-cols-1 gap-4 mt-10 place-items-center md:place-items-center '>
+<div className='p-4 grid grid-cols-1 gap-4 place-items-center md:place-items-center '>
 
  
 <img
@@ -121,22 +117,22 @@ const Alarmas = () => {
       
     />   
 
-<h1 className='text-2xl text-slate-200 mt-5 md:text-3xl font font-bold'>Llamada al 911</h1>
+<p className='text-2xl text-slate-200 mt-5 md:text-3xl font font-bold'>Llamada al 911</p>
 <p className='text-stone-200 text-xl md:text-2xl text-center font mt-3 font-light'>De ser necesario se comunica a las fuerzas de seguridad y/o emergencias para que acudan al domicilio.</p>
 
 </div>
 
-<div className="flex justify-center mt-5 bg-gradient-to-r from-stone-400 to-slate-200 w-full rounded-[5px]">
+<div className="flex flex-col mt-5 bg-gradient-to-r from-stone-400 to-slate-200 w-fit rounded-full p-2 mb-4">
   
   <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
-    <h1 className="p-2 text-2xl font text-blue-950 font-bold">Tienda virtual</h1>
+    <p className="text-l font text-blue-950 font-bold">Tienda virtual</p>
    
     <img
       src="/shop.svg"
       alt="shop icon"
       width={30}
       height={10}
-      className="h-10"
+      className="h-10 p-0.5"
     />
 
   </a>
