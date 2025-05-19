@@ -16,10 +16,7 @@ export default function Home() {
     <>
       <Header/>
       <Navbar />
-      <Hero>
-        {/* Aquí tu título principal y botón CTA */}
-      </Hero>
-
+      <Hero/>
       <FloatingCTA/>
 
       <Section bg="gray"  id="alarmas">
