@@ -40,7 +40,7 @@ export default function Industrias() {
             animate={{ opacity: 1 }}
             transition={{ delay: idx * 0.2 }}
           >
-            <Image
+            <img
               src={src}
               alt={`Imagen sector ${idx + 1}`}
               width={400}

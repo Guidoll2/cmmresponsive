@@ -21,7 +21,7 @@ export default function Navbar() {
  <nav className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-8 h-20">
         {/* Logo */}
         <Link href="/" className="hidden md:flex items-center z-50">
-          <Image src="/logogrande.png" alt="CMM Logo" width={130} height={44} className="opacity-95 hover:opacity-100 transition" priority />
+          <img src="/logogrande.png" alt="CMM Logo" width={130} height={44} className="opacity-95 hover:opacity-100 transition" />
         </Link>
 
         {/* Desktop Links */}
@@ -75,7 +75,7 @@ export default function Navbar() {
             >
               <div className="flex flex-col items-center justify-center px-6 py-8 border-b">
                 <Link href="/" onClick={() => setIsOpen(false)}>
-                  <Image src="/logogrande.png" alt="CMM Logo" width={120} height={40} className="opacity-95 mb-2" />
+                  <img src="/logogrande.png" alt="CMM Logo" width={120} height={40} className="opacity-95 mb-2" />
                 </Link>
               
               </div>

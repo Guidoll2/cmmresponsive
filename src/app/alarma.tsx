@@ -55,7 +55,7 @@ export default function Alarmas() {
             animate={{ opacity: 1 }}
             transition={{ delay: idx * 0.2 }}
           >
-            <Image
+            <img
               src={f.src}
               alt={f.alt}
               width={400}
