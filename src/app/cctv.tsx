@@ -1,130 +1,110 @@
+import Image from 'next/image'
+import { motion } from 'framer-motion'
 
+export default function Cctv() {
+  const features = [
+    { src: '/cctvadobe.jpeg', alt: 'Cámara Exterior', label: 'Cámara Exterior' },
+    { src: '/cctv.jpg', alt: 'Cámara Interior', label: 'Cámara Interior' },
+    { src: '/CCTV1.jpg', alt: 'Visión Nocturna', label: 'Visión Nocturna' },
+    { src: '/cctvphone.jpg', alt: 'App Móvil', label: 'App Móvil' }
+  ]
 
-const Cctv = () => {
+  const benefits = [
+    {
+      icon: '/cctvhome1.svg',
+      title: 'Visualización 24/7',
+      description: 'Accede a la transmisión en vivo desde cualquier lugar y en cualquier momento.'
+    },
+    {
+      icon: '/celu.svg',
+      title: 'Notificaciones Instantáneas',
+      description: 'Recibe alertas en tiempo real por cortes de luz, internet o detección de movimiento.'
+    },
+    {
+      icon: '/almacenamiento.svg',
+      title: 'Grabación Continua',
+      description: 'Guarda y reproduce videos desde PC, tablet o celular sin límites.'
+    }
+  ]
 
-    return (
-<div id='CONTENEDORCCTV' className='flex flex-col justify-center items-center bg-gradient-to-l from-blue-950 to-blue-900 mt-2 p-4'>
+  return (
+    <article className="text-gray-100">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-12"
+      >
+        <h2 className="text-4xl md:text-6xl font-extrabold">Cámaras de Seguridad</h2>
+        <p className="mt-4 text-lg md:text-2xl text-gray-300">Tu propiedad al alcance de tu mano</p>
+      </motion.div>
 
-<h1 className='font font-bold text-center md:text-7xl text-5xl text-stone-200 mt-6 font'>Cámaras de seguridad </h1>
+      {/* Features Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {features.map((f, idx) => (
+          <motion.div
+            key={idx}
+            className="bg-white bg-opacity-10 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transform transition"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: idx * 0.2 }}
+          >
+            <Image
+              src={f.src}
+              alt={f.alt}
+              width={400}
+              height={300}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-4">
+              <h3 className="font-semibold text-xl">{f.label}</h3>
+            </div>
+          </motion.div>
+        ))}
+      </div>
 
-<h2 className='font-[] text-center md:text-4xl text-2xl text-stone-200 mt-4 font font-light'>Tu propiedad en tu celular </h2>
+      {/* Benefits */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-8"
+      >
+        <h3 className="text-3xl md:text-4xl font-bold">Beneficios Principales</h3>
+      </motion.div>
 
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        {benefits.map((b, idx) => (
+          <motion.div
+            key={idx}
+            className="flex flex-col items-center text-center p-4 bg-white bg-opacity-10 rounded-2xl shadow-md hover:bg-opacity-20 transition"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: idx * 0.2 }}
+          >
+            <Image src={b.icon} alt={b.title} width={80} height={80} />
+            <h4 className="mt-4 font-semibold text-xl">{b.title}</h4>
+            <p className="mt-2 text-gray-300">{b.description}</p>
+          </motion.div>
+        ))}
+      </div>
 
-<div className='flex grid grid-cols-2 gap-4 md:grid-cols-4 opacity-80 h-96'>
-<img
-      className="rounded-xl shadow-xl w-full h-full"
-      src="/cctvadobe.jpeg"
-      alt="CMM Logo"
-      width={1000}
-      height={100}
-      
-    />
-
-<img
-      className="rounded-xl shadow-xl w-full h-full"
-      src="/cctv.jpg"
-      alt="CMM Logo"
-      width={1000}
-      height={200}
-      
-    />
-
-    
-<img
-      className="rounded-xl shadow-xl w-full h-full"
-      src="/CCTV1.jpg"
-      alt="CMM Logo"
-      width={1000}
-      height={100}
-      
-    />
-
-
-
-<img
-      className="rounded-xl shadow-xl w-full h-full"
-      src="/cctvphone.jpg"
-      alt="CMM Logo"
-      width={1000}
-      height={100}
-      
-    />
-
-
-</div>
-
-<div className='p-4 grid grid-cols-1 gap-4 mt-24 place-items-center md:place-items-center '>
-
- 
-<img
-      className="rounded-xl opacity-90 md:w-[180px] "
-      src="/cctvhome1.svg"
-      alt="CMM Logo"
-      width={130}
-      height={200}
-      
-    />   
-
-
-<div className='mt-5 '>
-<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold font'>Visualización en directo las 24 horas </h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font font-light'>Estés donde estés vas a poder ver tu propiedad.</p>
-
-</div>
-
- 
-<div className='grid grid-cols-1 mt-20'>
-<img
-      className="rounded-xl opacity-90 mt-8 ml-8 md:w-[180px] md:mt-20"
-      src="/celu.svg"
-      alt="CMM Logo"
-      width={140}
-      height={200}
-      
-    />  
-    
-</div>
-
-<div className='grid grid-rows-1 grid-cols-1'>
-<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font'>Notificaciones en tiempo real </h1>
-<p className='text-stone-200 text-xl md:text-2xl mt-3 text-center font font-light'>Recibís notificaciones de tu sistema de video vigilancia de manera instantánea (Cortes de luz, internet, detección de movimiento entre otros).</p>
-</div>
-
-
-<img
-      className="rounded-xl h-full mt-20 ml-2 md:w-[170px] md:mt-20"
-      src="/almacenamiento.svg"
-      alt="CMM Logo"
-      width={110}
-      height={200}
-      
-    />   
-
-<div className='grid grid-rows-1 grid-cols-1'>
-<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font'>Grabación continua </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font font-light'>Accedé al video almacenado desde cualquier pc tablet o celular.</p>
-</div>
-</div>
-<div className="flex flex-col mt-5 bg-gradient-to-r from-stone-400 to-slate-200 w-fit rounded-full p-2 mb-4">
-  
-  <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
-    <p className="text-l font text-blue-950 font-bold">Tienda virtual</p>
-   
-    <img
-      src="/shop.svg"
-      alt="shop icon"
-      width={30}
-      height={10}
-      className="h-10 p-0.5"
-    />
-
-  </a>
-</div>
-
-
-</div>
-
-    )
+      {/* CTA */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        className="flex justify-center"
+      >
+        <a
+          href="https://guidoll.mercadoshops.com.ar/"
+          target="_blank"
+          className="inline-block px-6 py-3 bg-teal-400 hover:bg-teal-300 text-gray-900 font-medium rounded-full shadow-lg transition"
+        >
+          Explora Nuestra Tienda Virtual
+        </a>
+      </motion.div>
+    </article>
+  )
 }
-
-export default Cctv; 

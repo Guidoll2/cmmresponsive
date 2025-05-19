@@ -1,185 +1,58 @@
-const Contacto = () => {
-    return (
-        
-        
-<div id='CONTENEDORCONTACTO' className='grid grid-rows-1 bg-gradient-to-t from-blue-950 to-blue-900 mt-2 p-4 md:'>
+import { motion } from 'framer-motion'
+import { Mail, Phone, Facebook, Instagram } from 'lucide-react'
+import Link from 'next/link'
+import { FaWhatsapp } from 'react-icons/fa'
 
 
+export default function Contacto() {
+  const methods = [
+    { icon: <FaWhatsapp size={48} className="text-teal-400" />, label: 'WhatsApp', href: 'https://wa.me/+5491133324034' },
+    { icon: <Mail size={48} className="text-teal-400" />, label: 'Correo', href: 'mailto:cmm@alarmascmm.com' },
+    { icon: <Phone size={48} className="text-teal-400" />, label: 'Teléfono', href: 'tel:+541133324034' },
+    { icon: <Facebook size={48} className="text-teal-400" />, label: 'Facebook', href: 'https://www.facebook.com/CMM.ALARMAS', external: true },
+    { icon: <Instagram size={48} className="text-teal-400" />, label: 'Instagram', href: 'https://www.instagram.com/alarmascmm/', external: true }
+  ]
 
-
-<h1 className='font-light  md:text-7xl text-5xl text-stone-200 mt-5 text-center font'>Contáctenos</h1>
-
-<div className="flex grid grid-cols-1">
-
-<h1 className="text-2xl text-white text-center font-light p-4">Horario de atención: Lunes a Viernes de 9:00 a 17:00
-</h1>
-</div>
-
-
-<div className='grid grid-cols-3 p-2 gap-8 place-items-center mt-10 md:grid-cols-3 md:gap-0 md:p-0'>
-
-<div id='ICONOWHATSAPPDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0'>
-
-  <div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
-<a href='https://wa.me/+5491133324034' target='_blank'  >
-<img
-          className="flex py-4 ml-4 md:w-[60px] md:py-8 md:ml-8"
-          src="/whatsappmaximo.svg"
-          alt="whatsapplogo"
-          
-          width={25}
-          height={0}
-          
-        />
-        </a>
- </div>      
-<div className=''>
-<a href='https://wa.me/+5491133324034' target='_blank'  >
-    <h2 className='text-xl font-light text-stone-100 md:p-4 md:text-3xl font'>Whatsapp</h2>
-   
-
-  </a> 
-
-  </div>
-
-  </div>
-
-
-<div id='ICONOMAILDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0 '>
-
-<div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
-<a href='mailto:cmm@alarmascmm.com'>
-<img
-        className="flex py-4 ml-4 md:w-[60px] md:py-8 md:ml-8"
-        src="/mailmaximo.svg"
-        alt="maillogo"
-        
-        width={25}
-        height={0}
-        
-      />
-      </a>
-</div>      
-<div className=''>
-<a href='mailto:cmm@alarmascmm.com'>
-  <h2 className='text-xl font-light text-stone-100 px-4 md:p-4 md:text-3xl font '>Mail</h2>
- 
-
-</a> 
-
-</div>
-
-
-</div>
-
-<div id='ICONOTELDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0'>
-
-  <div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
-  <a href='tel:+541133324034' >
-<img
-          className="py-4 ml-4 md:w-[60px] md:py-8 md:ml-8"
-          src="/telmaximo.svg"
-          alt="whatsapplogo"
-          
-          width={27}
-          height={0}
-          
-        />
-        </a>
- </div>      
-<div className=''>
-<a href='tel:+541133324034' >
-    <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl font'>Teléfono</h2>
-   
-
-  </a> 
-
-  </div>
-
-  </div>
-
-
-
-
-</div>
-
-<div className='grid grid-cols-2 mt-8'>
-<div id='ICONOFACEBOOKDELAMOR' className='grid grid-cols-1 gap-1 place-items-center md:mt-0'>
-
-<div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px] md:w-[120px] md:h-[120px]'>
-<a
-        href="https://www.facebook.com/CMM.ALARMAS"
-        target="_blank"
-        className=""
+  return (
+    <article className="text-gray-100">
+      {/* Header */}
+      <motion.div
+        className="text-center mb-8"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
       >
+        <h2 className="text-4xl md:text-6xl font-extrabold">Contáctenos</h2>
+        <p className="mt-4 text-lg md:text-xl text-gray-300">Lunes a Viernes, 9:00 - 17:00</p>
+      </motion.div>
 
-<img
-        className="flex py-4 ml-4 md:w-[60px] md:py-8 md:ml-8"
-        src="/facebookmaximo.svg"
-        alt="whatsapplogo"
-        
-        width={30}
-        height={0}
-        
-      />
-      </a>
-</div>      
-<div className=''>
-<a
-        href="https://www.facebook.com/CMM.ALARMAS"
-        target="_blank"
-        className=""
-      >
-
-  <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl font'>Facebook</h2>
- 
-
-</a> 
-
-</div>
-
-</div>
-
-<div id='ICONOIGDELAMOR' className='grid grid-cols-1 gap-1 place-items-center  md:mt-0'>
-
-<div className='bg-stone-200 rounded-[100px] w-[60px] h-[60px]  md:w-[120px] md:h-[120px]'>
-<a
-        href="https://www.instagram.com/alarmascmm/"
-        target="_blank"
-        className=""
-      >
-
-<img
-        className="flex py-4 ml-4 md:py-8 md:ml-8 md:w-[60px]"
-        src="/igmaximo.svg"
-        alt="whatsapplogo"
-        
-        width={30}
-        height={0}
-        
-      />
-      </a>
-</div>      
-<div className=''>
-<a
-        href="https://www.instagram.com/alarmascmm/"
-        target="_blank"
-        className=""
-      >
-
-  <h2 className='text-l font-light text-stone-100 md:p-4 md:text-3xl'>Instagram</h2>
- 
-
-</a> 
-
-</div>
-
-</div>
-</div>
-
-
-</div>
-    )
+      {/* Contact Methods */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8 mb-12">
+        {methods.map((m, idx) => (
+          <motion.div
+            key={idx}
+            className="flex flex-col items-center bg-white bg-opacity-10 p-6 rounded-2xl shadow-md hover:bg-opacity-20 transition"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: idx * 0.2 }}
+          >
+            <Link
+              href={m.href}
+              target={m.external ? '_blank' : '_self'}
+              className="flex items-center justify-center w-16 h-16 mb-4"
+            >
+              {m.icon}
+            </Link>
+            <Link
+              href={m.href}
+              target={m.external ? '_blank' : '_self'}
+              className="font-medium text-lg hover:text-teal-300 transition"
+            >
+              {m.label}
+            </Link>
+          </motion.div>
+        ))}
+      </div>
+    </article>
+  )
 }
-
-export default Contacto;

@@ -1,149 +1,97 @@
-const Industrias = () => {
+import Image from 'next/image'
+import { motion } from 'framer-motion'
+import { Building, Ear, Users, Camera } from 'lucide-react'
 
-return (
+export default function Industrias() {
+  const sectors = [
+    { icon: <Building size={48} className="text-teal-400" />, title: 'Control de Acceso', desc: 'Gestiona electrónicamente accesos a distintas áreas de tu negocio.' },
+    { icon: <Ear size={48} className="text-teal-400" />, title: 'Optimización de Procesos', desc: 'Recibe alertas del estado de tus equipos de producción.' },
+    { icon: <Users size={48} className="text-teal-400" />, title: 'Seguimiento de Empleados', desc: 'Asigna y registra tareas de tu equipo en tiempo real.' },
+    { icon: <Camera size={48} className="text-teal-400" />, title: 'CCTV Motorizado', desc: 'Domos IA 360° con seguimiento automático.' }
+  ]
 
-    <div id='CONTENEDORINDUSTRIAS' className='flex flex-col justify-center items-center bg-gradient-to-l from-blue-950 to-blue-900 to-blue-900 mt-2 p-4'>
-<h1 className='font font-bold md:text-7xl text-5xl text-stone-200 mt-5 text-center font'>Industrias y comercios</h1>
-<h2 className='font-[] md:text-4xl text-2xl text-stone-200 mt-4 text-center font font-light'>Controla y optimiza tus negocios</h2>
+  const gallery = [
+    '/indusrty3.jpeg',
+    '/hands.jpg',
+    '/indusrty1.jpeg',
+    '/indusrty2.jpeg'
+  ]
 
+  return (
+    <article className="text-gray-100">
+      {/* Header */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-12"
+      >
+        <h2 className="text-4xl md:text-6xl font-extrabold">Industrias y Comercios</h2>
+        <p className="mt-4 text-lg md:text-2xl text-gray-300">Controla y optimiza tus operaciones</p>
+      </motion.div>
 
+      {/* Gallery */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+        {gallery.map((src, idx) => (
+          <motion.div
+            key={idx}
+            className="bg-white bg-opacity-10 rounded-2xl shadow-lg overflow-hidden hover:scale-105 transform transition"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: idx * 0.2 }}
+          >
+            <Image
+              src={src}
+              alt={`Imagen sector ${idx + 1}`}
+              width={400}
+              height={300}
+              className="w-full h-48 object-cover"
+            />
+          </motion.div>
+        ))}
+      </div>
 
-<div className='flex grid grid-cols-2 gap-4 md:grid-cols-4 opacity-80 h-96'>
-<img
-      className="rounded-xl shadow-xl w-full h-full"
-      src="/indusrty3.jpeg"
-      alt="CMM Logo"
-      width={1000}
-      height={100}
-      
-    />
+      {/* Sectors */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-8"
+      >
+        <h3 className="text-3xl md:text-4xl font-bold">Nuestros Servicios</h3>
+      </motion.div>
 
-<img
-      className="rounded-xl shadow-xl w-full h-full"
-      src="/hands.jpg"
-      alt="control acceso industria"
-      width={1000}
-      height={100}
-      
-    />
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        {sectors.map((s, idx) => (
+          <motion.div
+            key={idx}
+            className="flex flex-col items-center text-center p-6 bg-white bg-opacity-10 rounded-2xl shadow-md hover:bg-opacity-20 transition"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: idx * 0.2 }}
+          >
+            {s.icon}
+            <h4 className="mt-4 font-semibold text-xl text-white">{s.title}</h4>
+            <p className="mt-2 text-gray-300">{s.desc}</p>
+          </motion.div>
+        ))}
+      </div>
 
-    
-<img
-      className="rounded-xl shadow-xl w-full h-full"
-      src="/indusrty1.jpeg"
-      alt="CMM Logo"
-      width={1000}
-      height={100}
-      
-    />
-
-
-
-<img
-      className="rounded-xl shadow-xl w-full h-full"
-      src="/indusrty2.jpeg"
-      alt="CMM Logo"
-      width={1000}
-      height={100}
-      
-    />
-
-
-</div>
-
-
-
-<div className='p-4 grid grid-cols-1 gap-4 mt-8 place-items-center md:place-items-center  '>
-
- 
-<img
-      className="rounded-xl opacity-90 mt-20 md:w-[180px] "
-      src="/acceso.svg"
-      alt="CMM Logo"
-      width={120}
-      height={200}
-      
-    />   
-
-
-
-<div className=''>
-<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font'>Control de acceso</h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font font-light'>Gestiona de manera electrónica el acceso a los distintos sectores de tu industria/comercio</p>
-</div>
-
-<div className='grid grid-cols-1 mt-5'>
-<img
-      className="rounded-xl opacity-90 mt-20 md:w-[180px] md:mt-20"
-      src="/automatizar.svg"
-      alt="CMM Logo"
-      width={120}
-      height={200}
-      
-    />   
-    
-</div>
-
-<div className='grid grid-cols-1'>
-<h1 className='text-xl text-center text-stone-100 md:text-3xl font-bold font'>Mejora de procesos productivos </h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font font-light'>Recibi alertas del estado de tus equipos de producción instantáneamente</p>
-</div>
-
-
-<div className=''>
-<img
-      className="mt-20 ml-10 md:w-[180px] md:mt-20"
-      src="/celu.svg"
-      alt="CMM Logo"
-      width={120}
-      height={200}
-      
-    />   
-</div>
-<div className='grid grid-rows-1 grid-cols-1 md:mt-20'>
-<h1 className='text-2xl text-center text-stone-100 md:text-3xl font-bold font'>Seguimiento de empleados</h1>
-<p className='text-stone-200 text-xl md:text-2xl text-center mt-3 font font-light'>Generá tareas para tus empleados que queden registradas en tu app de control</p>
-</div>
-
-<img
-      className="rounded-xl opacity-90 mt-20 md:w-[180px] "
-      src="/cctvs.svg"
-      alt="CMM Logo"
-      width={130}
-      height={200}
-      
-    />   
-
-
-<div className='mt-5 '>
-<h1 className='text-2xl md:text-3xl text-center text-stone-100 md:text-2xl font-bold font'>CCTV Motorizado </h1>
-<p className='mt-3 text-xl md:text-2xl text-center text-stone-100 font font-light'>Domos con IA, motorizados y 360° de ángulo de cobertura.</p>
-
-</div>
-
-
-</div>
- 
-<div className="flex flex-col mt-5 bg-gradient-to-r from-stone-400 to-slate-200 w-fit rounded-full p-2 mb-4">
-  
-  <a href="https://guidoll.mercadoshops.com.ar/" target="_blank" className="flex items-center space-x-2">
-    <p className="text-l font text-blue-950 font-bold">Tienda virtual</p>
-   
-    <img
-      src="/shop.svg"
-      alt="shop icon"
-      width={30}
-      height={10}
-      className="h-10 p-0.5"
-    />
-
-  </a>
-</div>
-
-</div>
-
-)
-
+      {/* CTA */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5 }}
+        className="flex justify-center"
+      >
+        <a
+          href="https://guidoll.mercadoshops.com.ar/"
+          target="_blank"
+          className="inline-block px-6 py-3 bg-teal-400 hover:bg-teal-300 text-gray-900 font-medium rounded-full shadow-lg transition"
+        >
+          Visita Nuestra Tienda Virtual
+        </a>
+      </motion.div>
+    </article>
+  )
 }
-
-export default Industrias;
